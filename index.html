@@ -6,29 +6,27 @@
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <meta name="googlebot" content="noindex, nofollow">
 <title>Atelier de cadrage stratégique — Aymeric Pataud</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --creme:#F6F2EA; --creme-2:#EFEAE0; --encre:#161A18; --encre-60:#161A18a0;
   --vert:#3F5C50; --vert-clair:#54786A; --sauge:#A7C1B6; --sauge-pale:#D6E3DC;
   --rouge:#A63D2F; --rouge-pale:#F0DCD8; --ambre:#B07B23; --ambre-pale:#F4E7CE;
+  --bleu:#2F5D82; --bleu-pale:#DCE7F0;
   --ligne:#DED7C9; --blanc:#FFFDF9;
-  --serif:'Fraunces',Georgia,serif; --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --sf:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{background:var(--creme);color:var(--encre);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{background:var(--creme);color:var(--encre);font-family:var(--sf);font-size:17px;line-height:1.6;letter-spacing:-.011em;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 
 /* ---------- NAV ---------- */
-.topbar{position:sticky;top:0;z-index:100;background:rgba(246,242,234,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--ligne)}
-.topbar-in{max-width:1240px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;gap:1.5rem}
-.brand{font-family:var(--serif);font-weight:600;font-size:1rem;white-space:nowrap}
-.brand span{color:var(--vert)}
-.navlinks{display:flex;gap:.15rem;overflow-x:auto;scrollbar-width:none;flex:1}
+.topbar{position:sticky;top:0;z-index:100;background:rgba(246,242,234,.82);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--ligne)}
+.topbar-in{max-width:1240px;margin:0 auto;padding:.65rem 1.5rem;display:flex;align-items:center;gap:1.5rem}
+.brand{font-weight:600;font-size:.95rem;white-space:nowrap;letter-spacing:-.02em}
+.brand span{color:var(--vert);font-weight:400}
+.navlinks{display:flex;gap:.1rem;overflow-x:auto;scrollbar-width:none;flex:1}
 .navlinks::-webkit-scrollbar{display:none}
-.navlinks a{font-size:.8rem;font-weight:500;color:var(--encre-60);text-decoration:none;padding:.4rem .6rem;border-radius:6px;white-space:nowrap;transition:.15s}
+.navlinks a{font-size:.8rem;font-weight:500;color:var(--encre-60);text-decoration:none;padding:.38rem .6rem;border-radius:7px;white-space:nowrap;transition:.15s;letter-spacing:-.01em}
 .navlinks a:hover{background:var(--sauge-pale);color:var(--encre)}
 .navlinks a.on{background:var(--vert);color:var(--creme)}
 
@@ -36,124 +34,122 @@ body{background:var(--creme);color:var(--encre);font-family:var(--sans);font-siz
 .wrap{max-width:1000px;margin:0 auto;padding:0 1.5rem}
 section{padding:4.5rem 0;border-bottom:1px solid var(--ligne)}
 section:last-of-type{border-bottom:none}
-.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;color:var(--vert);margin-bottom:.9rem}
-h1{font-family:var(--serif);font-size:clamp(2.1rem,5.5vw,3.4rem);line-height:1.1;font-weight:600;letter-spacing:-.02em}
-h2{font-family:var(--serif);font-size:clamp(1.6rem,3.6vw,2.3rem);line-height:1.15;font-weight:600;letter-spacing:-.015em;margin-bottom:1.1rem}
-h3{font-family:var(--serif);font-size:1.22rem;font-weight:600;margin:2.2rem 0 .7rem}
-h4{font-size:.95rem;font-weight:700;margin:1.4rem 0 .4rem}
-p{margin-bottom:1rem;max-width:68ch}
-p.lead{font-size:1.12rem;color:var(--encre-60);max-width:62ch}
+.eyebrow{font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--vert);margin-bottom:.85rem}
+h1{font-size:clamp(2.2rem,5.6vw,3.6rem);line-height:1.05;font-weight:700;letter-spacing:-.033em}
+h2{font-size:clamp(1.7rem,3.8vw,2.4rem);line-height:1.1;font-weight:700;letter-spacing:-.028em;margin-bottom:1.05rem}
+h3{font-size:1.25rem;font-weight:600;letter-spacing:-.02em;margin:2.3rem 0 .7rem}
+h4{font-size:.98rem;font-weight:600;letter-spacing:-.015em;margin:1.4rem 0 .4rem}
+p{margin-bottom:1rem;max-width:66ch}
+p.lead{font-size:1.15rem;color:var(--encre-60);max-width:60ch;letter-spacing:-.016em}
 strong{font-weight:600}
 a{color:var(--vert)}
-ul,ol{margin:0 0 1rem 1.15rem;max-width:68ch}
+ul,ol{margin:0 0 1rem 1.15rem;max-width:66ch}
 li{margin-bottom:.4rem}
 
 /* ---------- HERO ---------- */
 .hero{padding:5rem 0 4rem;border-bottom:1px solid var(--ligne)}
-.hero h1{margin-bottom:1.4rem;max-width:17ch}
+.hero h1{margin-bottom:1.4rem;max-width:16ch}
 .hero-meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem}
-.pill{font-size:.76rem;font-weight:500;background:var(--blanc);border:1px solid var(--ligne);padding:.34rem .8rem;border-radius:99px}
+.pill{font-size:.78rem;font-weight:500;background:var(--blanc);border:1px solid var(--ligne);padding:.34rem .8rem;border-radius:99px}
 
 /* ---------- KPI ---------- */
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem;margin:2.4rem 0}
-.kpi{background:var(--blanc);border:1px solid var(--ligne);border-radius:12px;padding:1.4rem}
-.kpi .n{font-family:var(--serif);font-size:2.5rem;font-weight:600;line-height:1;letter-spacing:-.03em}
-.kpi .l{font-size:.83rem;color:var(--encre-60);margin-top:.5rem;line-height:1.45}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1rem;margin:2.4rem 0}
+.kpi{background:var(--blanc);border:1px solid var(--ligne);border-radius:14px;padding:1.4rem}
+.kpi .n{font-size:2.6rem;font-weight:700;line-height:1;letter-spacing:-.04em}
+.kpi .l{font-size:.85rem;color:var(--encre-60);margin-top:.55rem;line-height:1.45;letter-spacing:-.008em}
 .kpi.bad{border-color:#E3C5BF;background:var(--rouge-pale)}
 .kpi.bad .n{color:var(--rouge)}
 .kpi.good{border-color:#BDD3C8;background:var(--sauge-pale)}
 .kpi.good .n{color:var(--vert)}
+.kpi.info{border-color:#C3D3E1;background:var(--bleu-pale)}
+.kpi.info .n{color:var(--bleu)}
 
 /* ---------- CALLOUT ---------- */
-.callout{border-left:3px solid var(--vert);background:var(--blanc);padding:1.2rem 1.4rem;border-radius:0 10px 10px 0;margin:1.8rem 0}
+.callout{border-left:3px solid var(--vert);background:var(--blanc);padding:1.2rem 1.4rem;border-radius:0 12px 12px 0;margin:1.8rem 0}
 .callout p:last-child{margin-bottom:0}
 .callout.alert{border-left-color:var(--rouge);background:var(--rouge-pale)}
 .callout.warn{border-left-color:var(--ambre);background:var(--ambre-pale)}
-.callout .tag{font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--vert);display:block;margin-bottom:.45rem}
+.callout.note{border-left-color:var(--bleu);background:var(--bleu-pale)}
+.callout .tag{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--vert);display:block;margin-bottom:.45rem}
 .callout.alert .tag{color:var(--rouge)}
 .callout.warn .tag{color:var(--ambre)}
+.callout.note .tag{color:var(--bleu)}
 
 /* ---------- BAR CHART ---------- */
-.chart{background:var(--blanc);border:1px solid var(--ligne);border-radius:12px;padding:1.5rem;margin:1.8rem 0}
-.chart-t{font-size:.92rem;font-weight:700;margin-bottom:.3rem}
-.chart-s{font-size:.8rem;color:var(--encre-60);margin-bottom:1.2rem}
-.bar-row{display:grid;grid-template-columns:minmax(120px,1.7fr) 3fr auto;gap:.75rem;align-items:center;margin-bottom:.5rem;font-size:.83rem}
+.chart{background:var(--blanc);border:1px solid var(--ligne);border-radius:14px;padding:1.5rem;margin:1.8rem 0}
+.chart-t{font-size:.95rem;font-weight:600;letter-spacing:-.015em;margin-bottom:.25rem}
+.chart-s{font-size:.82rem;color:var(--encre-60);margin-bottom:1.2rem}
+.bar-row{display:grid;grid-template-columns:minmax(125px,1.7fr) 3fr auto;gap:.75rem;align-items:center;margin-bottom:.5rem;font-size:.85rem}
 .bar-lab{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.bar-track{display:block;background:var(--creme-2);border-radius:4px;height:20px;overflow:hidden}
-.bar-fill{display:block;height:100%;background:var(--vert);border-radius:4px;min-width:3px}
+.bar-track{display:block;background:var(--creme-2);border-radius:5px;height:20px;overflow:hidden}
+.bar-fill{display:block;height:100%;background:var(--vert);border-radius:5px;min-width:3px}
 .bar-fill.z{background:var(--rouge);opacity:.35}
 .bar-fill.hi{background:var(--ambre)}
-.bar-val{font-weight:700;font-variant-numeric:tabular-nums;min-width:52px;text-align:right}
+.bar-fill.bl{background:var(--bleu)}
+.bar-val{font-weight:600;font-variant-numeric:tabular-nums;min-width:54px;text-align:right}
 .bar-val.z{color:var(--rouge)}
 
 /* ---------- TABLE ---------- */
-.tw{overflow-x:auto;margin:1.6rem 0;border:1px solid var(--ligne);border-radius:12px;background:var(--blanc)}
-table{width:100%;border-collapse:collapse;font-size:.85rem;min-width:480px}
-th{text-align:left;font-weight:700;font-size:.73rem;letter-spacing:.05em;text-transform:uppercase;color:var(--encre-60);padding:.8rem 1rem;border-bottom:1px solid var(--ligne);white-space:nowrap}
+.tw{overflow-x:auto;margin:1.6rem 0;border:1px solid var(--ligne);border-radius:14px;background:var(--blanc)}
+table{width:100%;border-collapse:collapse;font-size:.87rem;min-width:480px}
+th{text-align:left;font-weight:600;font-size:.75rem;letter-spacing:.02em;text-transform:uppercase;color:var(--encre-60);padding:.8rem 1rem;border-bottom:1px solid var(--ligne);white-space:nowrap}
 td{padding:.75rem 1rem;border-bottom:1px solid var(--creme-2);vertical-align:top}
 tr:last-child td{border-bottom:none}
 td.num{font-variant-numeric:tabular-nums;text-align:right;font-weight:600}
-.ok{color:var(--vert);font-weight:700}
-.no{color:var(--rouge);font-weight:700}
+.ok{color:var(--vert);font-weight:600}
+.no{color:var(--rouge);font-weight:600}
 
 /* ---------- CARDS ---------- */
-.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.1rem;margin:1.8rem 0}
-.card{background:var(--blanc);border:1px solid var(--ligne);border-radius:12px;padding:1.4rem}
-.card h4{margin-top:0;font-family:var(--serif);font-size:1.05rem;font-weight:600}
-.card p{font-size:.87rem;margin-bottom:.6rem}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:1.1rem;margin:1.8rem 0}
+.card{background:var(--blanc);border:1px solid var(--ligne);border-radius:14px;padding:1.4rem}
+.card h4{margin-top:0;font-size:1.08rem;font-weight:600;letter-spacing:-.02em}
+.card p{font-size:.88rem;margin-bottom:.6rem}
 .card p:last-child{margin-bottom:0}
-.card .rank{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;background:var(--vert);color:var(--creme);padding:.2rem .55rem;border-radius:99px;margin-bottom:.7rem}
+.card .rank{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;background:var(--vert);color:var(--creme);padding:.22rem .58rem;border-radius:99px;margin-bottom:.7rem}
 .card .rank.r2{background:var(--vert-clair)}
 .card .rank.r3{background:var(--sauge);color:var(--encre)}
 .card .rank.r4{background:var(--creme-2);color:var(--encre-60)}
-.card dl{font-size:.83rem;margin-top:.8rem;border-top:1px solid var(--creme-2);padding-top:.8rem}
-.card dt{font-weight:600;color:var(--encre-60);font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;margin-top:.6rem}
+.card dl{font-size:.85rem;margin-top:.8rem;border-top:1px solid var(--creme-2);padding-top:.8rem}
+.card dt{font-weight:600;color:var(--encre-60);font-size:.74rem;text-transform:uppercase;letter-spacing:.03em;margin-top:.6rem}
 .card dd{margin:.15rem 0 0}
 
 /* ---------- STEPS ---------- */
 .steps{counter-reset:s;margin:1.8rem 0}
 .step{counter-increment:s;position:relative;padding-left:3rem;margin-bottom:1.5rem}
-.step::before{content:counter(s);position:absolute;left:0;top:0;width:2rem;height:2rem;background:var(--vert);color:var(--creme);border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-weight:600;font-size:.95rem}
-.step h4{margin:.2rem 0 .35rem}
-.step p{font-size:.9rem;margin-bottom:.3rem}
+.step::before{content:counter(s);position:absolute;left:0;top:0;width:2rem;height:2rem;background:var(--vert);color:var(--creme);border-radius:50%;display:grid;place-items:center;font-weight:600;font-size:.92rem}
+.step h4{margin:.15rem 0 .35rem}
+.step p{font-size:.91rem;margin-bottom:.3rem}
 
 /* ---------- TREE ---------- */
-.tree{background:var(--blanc);border:1px solid var(--ligne);border-radius:12px;padding:1.4rem;margin:1.6rem 0;overflow-x:auto}
-.tree pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.78rem;line-height:1.85;white-space:pre}
-.tree b{color:var(--vert);font-weight:700}
+.tree{background:var(--blanc);border:1px solid var(--ligne);border-radius:14px;padding:1.4rem;margin:1.6rem 0;overflow-x:auto}
+.tree pre{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,monospace;font-size:.78rem;line-height:1.85;white-space:pre;letter-spacing:0}
+.tree b{color:var(--vert);font-weight:600}
 .tree i{color:var(--encre-60);font-style:normal}
 
 /* ---------- TIMELINE ---------- */
 .tl{margin:1.8rem 0;border-left:2px solid var(--sauge);padding-left:1.6rem}
 .tl-i{position:relative;margin-bottom:1.6rem}
 .tl-i::before{content:'';position:absolute;left:-2.06rem;top:.45rem;width:.65rem;height:.65rem;background:var(--vert);border-radius:50%;border:2px solid var(--creme)}
-.tl-d{font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--vert)}
+.tl-d{font-size:.74rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--vert)}
 .tl-i h4{margin:.2rem 0 .3rem}
-.tl-i p{font-size:.88rem;margin-bottom:0}
+.tl-i p{font-size:.89rem;margin-bottom:0}
 
-/* ---------- FOOTER ---------- */
-footer{padding:3rem 0 4rem;font-size:.85rem;color:var(--encre-60)}
+footer{padding:3rem 0 4rem;font-size:.87rem;color:var(--encre-60)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:baseline}
-footer a{font-weight:600}
-
-.small{font-size:.82rem;color:var(--encre-60)}
-.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;background:var(--creme-2);padding:.1rem .35rem;border-radius:4px}
+.small{font-size:.84rem;color:var(--encre-60)}
 hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
 
 @media(max-width:720px){
-  .topbar-in{flex-direction:column;align-items:stretch;gap:.6rem;padding:.6rem 1rem}
+  body{font-size:16px}
+  .topbar-in{flex-direction:column;align-items:stretch;gap:.55rem;padding:.55rem 1rem}
   .navlinks{width:100%}
   section{padding:3.2rem 0}
-  .bar-row{grid-template-columns:1fr auto;grid-template-areas:"lab val" "trk trk";gap:.15rem .6rem;font-size:.8rem;margin-bottom:.85rem}
+  .bar-row{grid-template-columns:1fr auto;grid-template-areas:"lab val" "trk trk";gap:.15rem .6rem;font-size:.82rem;margin-bottom:.85rem}
   .bar-lab{grid-area:lab;white-space:normal;overflow:visible;line-height:1.35}
   .bar-val{grid-area:val;align-self:start}
   .bar-track{grid-area:trk;height:14px}
 }
-@media print{
-  .topbar{display:none}
-  section{page-break-inside:avoid;padding:1.5rem 0}
-  body{font-size:11pt}
-}
+@media print{.topbar{display:none}section{page-break-inside:avoid;padding:1.5rem 0}body{font-size:11pt}}
 </style>
 </head>
 <body>
@@ -163,10 +159,11 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
     <div class="brand">Atelier de cadrage <span>· Aymeric Pataud</span></div>
     <div class="navlinks">
       <a href="#bref">En bref</a>
-      <a href="#cibles">Vos clients</a>
+      <a href="#cibles">Tes clients</a>
       <a href="#requetes">Les requêtes</a>
       <a href="#concurrence">Qui capte</a>
-      <a href="#visibilite">Votre visibilité</a>
+      <a href="#visibilite">Ta visibilité</a>
+      <a href="#reunion">La Réunion</a>
       <a href="#site">Le site</a>
       <a href="#plan">Le plan</a>
       <a href="#messages">Les messages</a>
@@ -178,10 +175,10 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow">Atelier de cadrage stratégique · Août 2026</div>
-    <h1>Vous avez gagné la bataille du prix. Celle de la visibilité n'a pas commencé.</h1>
-    <p class="lead">Vous vendez deux à quatre fois plus cher que vos concurrents sans perdre de client. Sur 53&nbsp;385 personnes touchées sur LinkedIn en cinq mois, 35 sont venues sur votre site. Ce document explique ce qui bloque entre les deux, et ce qu'on fait.</p>
+    <h1>Tu as gagné la bataille du prix. Celle de la visibilité n'a pas commencé.</h1>
+    <p class="lead">Tu vends deux à quatre fois plus cher que tes concurrents sans perdre de client. Sur 53&nbsp;385 personnes touchées sur LinkedIn en cinq mois, 35 sont venues sur ton site. Ce document explique ce qui bloque entre les deux, et ce qu'on fait.</p>
     <div class="hero-meta">
-      <span class="pill">60 requêtes testées</span>
+      <span class="pill">84 requêtes testées</span>
       <span class="pill">4 SERP analysées</span>
       <span class="pill">Semrush · base France</span>
       <span class="pill">Document privé, non indexé</span>
@@ -196,28 +193,35 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
     <h2>Trois chiffres qui résument tout</h2>
 
     <div class="kpis">
-      <div class="kpi good"><div class="n">2 à 4×</div><div class="l">Votre prix par rapport aux concurrents, sans quasiment perdre de client. C'est un signal rare : votre valeur perçue dépasse largement votre prix.</div></div>
-      <div class="kpi bad"><div class="n">0,066 %</div><div class="l">De vos impressions LinkedIn se transforment en visite sur votre site. Le repère du secteur est entre 1 % et 3 %. Vous êtes 15 à 45 fois en dessous.</div></div>
-      <div class="kpi bad"><div class="n">6</div><div class="l">Enregistrements sur 53 385 impressions. Personne n'a jugé un de vos contenus assez utile pour le garder. Vous plaisez, vous ne servez pas encore.</div></div>
+      <div class="kpi good"><div class="n">2 à 4×</div><div class="l">Ton prix par rapport aux concurrents, sans quasiment perdre de client. C'est un signal rare : ta valeur perçue dépasse largement ton prix.</div></div>
+      <div class="kpi bad"><div class="n">0,066 %</div><div class="l">De tes impressions LinkedIn se transforment en visite sur ton site. Le repère du secteur est entre 1 % et 3 %. Tu es 15 à 45 fois en dessous.</div></div>
+      <div class="kpi bad"><div class="n">6</div><div class="l">Enregistrements sur 53 385 impressions. Personne n'a jugé un de tes contenus assez utile pour le garder. Tu plais, tu ne sers pas encore.</div></div>
     </div>
 
-    <p>Quand tous les indicateurs sont bons et qu'un seul décroche d'un facteur vingt, ce n'est pas un réglage à améliorer. C'est un mécanisme absent. Entre le moment où quelqu'un s'intéresse à vous et le moment où il vous parle, il n'y a rien.</p>
+    <p>Quand tous les indicateurs sont bons et qu'un seul décroche d'un facteur vingt, ce n'est pas un réglage à améliorer. C'est un mécanisme absent. Entre le moment où quelqu'un s'intéresse à toi et le moment où il te parle, il n'y a rien.</p>
 
-    <h3>Ce que l'étude a trouvé et qui change le plan</h3>
+    <h3>Les quatre constats qui changent le plan</h3>
 
     <div class="callout alert">
-      <span class="tag">Le constat qui coûte le plus cher</span>
-      <p><strong>Vos clients prioritaires ne vous cherchent pas sur Google.</strong> « Huile essentielle industrie agroalimentaire » : zéro recherche par mois. « Aromatisation agroalimentaire » : zéro. « Fournisseur arôme alimentaire » : zéro. Un directeur R&amp;D ne tape pas ces mots. Le référencement ne vous amènera pas d'industriels, et aucun budget de contenu ne changera ça.</p>
+      <span class="tag">01 — Le constat qui coûte le plus cher</span>
+      <p><strong>Tes clients prioritaires ne te cherchent pas sur Google.</strong> « Huile essentielle industrie agroalimentaire » : zéro recherche par mois. « Aromatisation agroalimentaire » : zéro. « Fournisseur arôme alimentaire » : zéro. Un directeur R&amp;D ne tape pas ces mots. Le référencement ne t'amènera pas d'industriels, et aucun budget de contenu ne changera ça.</p>
+    </div>
+
+    <div class="callout note">
+      <span class="tag">02 — Le gisement que personne n'avait vu</span>
+      <p><strong>« Team building cuisine » pèse 720 recherches par mois. « Team building culinaire », 480. « Atelier cuisine entreprise », 210, avec un coût du clic à 5,99 €.</strong></p>
+      <p>Additionnées, les requêtes d'animation culinaire en entreprise font <strong>environ 1 790 recherches mensuelles, contre 1 200 pour tout ton univers huiles essentielles réuni.</strong> Et les coûts au clic de 4 à 7 € disent une chose : ces recherches se transforment en contrats.</p>
+      <p style="margin-bottom:0">C'est une activité que tu fais déjà à La Réunion. Elle est absente de ton site.</p>
     </div>
 
     <div class="callout">
-      <span class="tag">L'opportunité, et il n'y en a qu'une</span>
-      <p><strong>« Huile essentielle hydrosoluble » : 100 recherches par mois, difficulté faible, et personne ne l'occupe.</strong> La page de résultats Google mélange de la cosmétique, Amazon, Etsy, Instagram et un brevet. Même Primessence, le concurrent B2B le mieux placé, n'en parle pas une seule fois dans son guide pourtant très complet. C'est la seule première position à la fois gagnable et utile. Vous avez déjà l'article.</p>
+      <span class="tag">03 — L'opportunité sur ton cœur de métier</span>
+      <p><strong>« Huile essentielle hydrosoluble » : 100 recherches par mois, difficulté faible, et personne ne l'occupe.</strong> La page de résultats Google mélange de la cosmétique, Amazon, Etsy, Instagram et un brevet. Même Primessence, le concurrent B2B le mieux placé, n'en parle pas une seule fois dans son guide pourtant très complet. C'est la seule première position à la fois gagnable et utile. Tu as déjà l'article.</p>
     </div>
 
     <div class="callout warn">
-      <span class="tag">La correction gratuite</span>
-      <p><strong>Votre site dit « culinaire ». Le marché tape « alimentaire ».</strong> 20 recherches par mois contre 170. Huit fois plus. C'est une balise à changer, ça ne coûte rien, et ça débloque la requête la plus volumineuse de votre univers.</p>
+      <span class="tag">04 — La correction gratuite</span>
+      <p><strong>Ton site dit « culinaire ». Le marché tape « alimentaire ».</strong> 20 recherches par mois contre 170. Huit fois plus. C'est une balise à changer, ça ne coûte rien, et ça débloque la requête la plus volumineuse de ton univers.</p>
     </div>
   </div>
 </section>
@@ -225,13 +229,19 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
 <!-- ============ CIBLES ============ -->
 <section id="cibles">
   <div class="wrap">
-    <div class="eyebrow">02 — Vos clients</div>
-    <h2>Quatre profils, deux priorités</h2>
-    <p class="lead">Construits à partir de vos déclarations, de la démographie réelle de votre audience LinkedIn et de la structure publique du secteur. Aucun de vos clients n'a été contacté, comme convenu.</p>
+    <div class="eyebrow">02 — Tes clients</div>
+    <h2>Quatre profils, et une priorité à trancher ensemble</h2>
+    <p class="lead">Construits à partir de tes déclarations, de la démographie réelle de ton audience LinkedIn et de la structure publique du secteur. Aucun de tes clients n'a été contacté, comme convenu.</p>
+
+    <div class="callout warn">
+      <span class="tag">À lire avant les fiches</span>
+      <p>Le classement ci-dessous vient de mon analyse, <strong>pas de tes données clients</strong>, que je n'ai pas. Il repose sur trois critères objectivables : la longueur du cycle de vente, la clarté de l'intention de recherche, et le contenu déjà disponible.</p>
+      <p style="margin-bottom:0"><strong>Tu es le seul à savoir si ça colle.</strong> Relis les quatre fiches et corrige ce qui ne correspond pas à ce que tu vois depuis dix ans. C'est la correction la plus utile que tu puisses apporter à ce document.</p>
+    </div>
 
     <div class="grid2">
       <div class="card">
-        <span class="rank">Priorité 1 · la valeur</span>
+        <span class="rank">La valeur</span>
         <h4>Le directeur R&amp;D bloqué</h4>
         <p>38-52 ans, ingénieur agro, PME de 10 à 20 M€. Sceptique par métier : il ne croit pas un argument, il le teste.</p>
         <dl>
@@ -247,23 +257,23 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
       </div>
 
       <div class="card">
-        <span class="rank r2">Priorité 2 · l'entrée</span>
+        <span class="rank r2">Hypothèse : la porte d'entrée</span>
         <h4>Le fromager qui veut aromatiser sans tricher</h4>
         <p>Fromager, affineur, brasseur. Fierté artisanale forte, méfiance envers tout ce qui ressemble à de l'industriel.</p>
         <dl>
+          <dt>Pourquoi je le place là</dt>
+          <dd>Cycle court, intention de recherche nette, et tu as déjà écrit l'article. <strong>À confirmer par toi :</strong> combien de fromagers as-tu réellement dans tes ~200 clients ?</dd>
           <dt>Ce qui le déclenche</dt>
-          <dd><strong>Il a essayé, il a raté.</strong> Son huile essentielle ne s'est pas dispersée dans le lait. Il tape alors une requête très précise.</dd>
+          <dd>Il a essayé, il a raté. Son huile essentielle ne s'est pas dispersée dans le lait. Il tape alors une requête très précise.</dd>
           <dt>Où il cherche</dt>
-          <dd><strong>Google.</strong> C'est le seul de vos profils qui cherche vraiment en ligne, avec une intention nette.</dd>
-          <dt>Cycle de vente</dt>
-          <dd>2 semaines à 3 mois. Le plus court des quatre.</dd>
+          <dd><strong>Google.</strong> C'est le seul de tes profils qui cherche vraiment en ligne, avec une intention nette.</dd>
           <dt>Combien en France</dt>
           <dd>~650 acteurs</dd>
         </dl>
       </div>
 
       <div class="card">
-        <span class="rank r3">Priorité 3</span>
+        <span class="rank r3">Le décideur</span>
         <h4>Le dirigeant qui veut se différencier</h4>
         <p>42-60 ans, PME familiale, souvent 2ᵉ ou 3ᵉ génération. Décide vite quand il est convaincu. Il achète à quelqu'un, pas à une société.</p>
         <dl>
@@ -275,29 +285,30 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
       </div>
 
       <div class="card">
-        <span class="rank r4">Priorité 4</span>
+        <span class="rank r4">La preuve</span>
         <h4>Le chef qui cherche à surprendre</h4>
         <p>25-50 ans, restaurant indépendant ou traiteur. Achète en impulsion, un flacon à la fois.</p>
         <dl>
           <dt>Ce qu'il rapporte</dt>
           <dd>Peu. C'est le segment le plus nombreux et le moins rentable.</dd>
           <dt>Pourquoi le garder</dt>
-          <dd>Il fabrique votre preuve gratuitement. Un chef qui poste une recette avec votre produit crée de la crédibilité qui rassure les industriels. Et vos contenus pour lui sont déjà tournés.</dd>
+          <dd>Il fabrique ta preuve gratuitement. Un chef qui poste une recette avec ton produit crée de la crédibilité qui rassure les industriels. Et tes contenus pour lui sont déjà tournés.</dd>
           <dt>La règle</dt>
           <dd><strong>À servir avec du contenu existant, jamais avec du temps commercial.</strong></dd>
         </dl>
       </div>
     </div>
 
-    <div class="callout">
-      <span class="tag">La séquence qui en découle</span>
-      <p>Le réflexe serait de viser le plus gros d'abord. C'est l'inverse qu'il faut faire. <strong>Le fromager se convertit vite, sur une recherche Google claire, avec un contenu que vous avez déjà écrit.</strong> Chaque fromager gagné devient un cas documenté qui sert à convaincre un directeur R&amp;D. On gagne vite sur la priorité 2 pour construire les preuves qui ouvrent la priorité 1.</p>
+    <div class="callout note">
+      <span class="tag">Le cinquième profil, apparu en cours d'étude</span>
+      <p><strong>Le responsable RH ou office manager qui cherche une animation d'équipe.</strong> Il ne t'achète pas des huiles essentielles, il t'achète une expérience. C'est le profil qui pèse le plus lourd en volume de recherche : 1 790 requêtes mensuelles contre 1 200 pour tout ton univers produit.</p>
+      <p style="margin-bottom:0">Il cherche activement sur Google, il paie cher, et il décide vite. Il est aujourd'hui absent de ton site et de ce classement. <strong>Il pourrait être ta vraie porte d'entrée, à La Réunion d'abord et en métropole ensuite.</strong> À arbitrer avec toi.</p>
     </div>
 
-    <h3>Le décalage entre qui vous visez et qui vous suit</h3>
+    <h3>Le décalage entre qui tu vises et qui te suit</h3>
     <div class="tw">
       <table>
-        <thead><tr><th>Dimension</th><th>Ce que vous visez</th><th>Votre audience réelle</th><th></th></tr></thead>
+        <thead><tr><th>Dimension</th><th>Ce que tu vises</th><th>Ton audience réelle</th><th></th></tr></thead>
         <tbody>
           <tr><td>Secteur</td><td>Agroalimentaire premium</td><td>Fabrication alimentaire et boissons, 16 %</td><td class="ok">Bon</td></tr>
           <tr><td>Taille d'entreprise</td><td>50-200 salariés (10-20 M€)</td><td>11-50 salariés, 14 %</td><td class="no">Trop petit</td></tr>
@@ -305,7 +316,7 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
         </tbody>
       </table>
     </div>
-    <p>Le secteur est bon, ce qui n'est pas un hasard. La taille et la fonction ne le sont pas. Mais une audience agroalimentaire en entreprises de 11 à 50 salariés, <strong>c'est exactement votre cible d'entrée</strong> : fromagers, brasseurs, artisans transformateurs. Vous avez déjà l'audience de votre porte d'entrée. Il vous manque celle de votre cible de valeur. On ajoute une couche, on ne change pas de cap.</p>
+    <p>Le secteur est bon, ce qui n'est pas un hasard. La taille et la fonction ne le sont pas. Mais une audience agroalimentaire en entreprises de 11 à 50 salariés, <strong>c'est exactement ta cible d'entrée</strong>. Tu as déjà l'audience de ta porte d'entrée, il te manque celle de ta cible de valeur. On ajoute une couche, on ne change pas de cap.</p>
   </div>
 </section>
 
@@ -314,11 +325,11 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
   <div class="wrap">
     <div class="eyebrow">03 — Les requêtes</div>
     <h2>Ce qu'ils tapent vraiment sur Google</h2>
-    <p class="lead">Vous avez demandé des volumes, pas du feeling. 60 requêtes testées sur Semrush, base France, août 2026. Voici ce que ça donne, y compris ce qui ne fait pas plaisir.</p>
+    <p class="lead">Tu as demandé des volumes, pas du feeling. 84 requêtes testées sur Semrush, base France, août 2026. Voici ce que ça donne, y compris ce qui ne fait pas plaisir.</p>
 
     <h3>D'abord la mauvaise nouvelle</h3>
     <div class="chart">
-      <div class="chart-t">Les requêtes de votre cible prioritaire</div>
+      <div class="chart-t">Les requêtes de ta cible prioritaire</div>
       <div class="chart-s">Recherches mensuelles en France · les industriels ne cherchent pas de fournisseur sur Google</div>
       <div class="bar-row"><span class="bar-lab">huile essentielle industrie agroalimentaire</span><span class="bar-track"><span class="bar-fill z" style="width:1%"></span></span><span class="bar-val z">0</span></div>
       <div class="bar-row"><span class="bar-lab">aromatisation agroalimentaire</span><span class="bar-track"><span class="bar-fill z" style="width:1%"></span></span><span class="bar-val z">0</span></div>
@@ -332,12 +343,31 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
       <div class="bar-row"><span class="bar-lab">arôme de fumée</span><span class="bar-track"><span class="bar-fill" style="width:15%"></span></span><span class="bar-val">70</span></div>
     </div>
 
-    <p>Additionnées, ces requêtes font moins de 200 recherches par mois pour toute la France. <strong>On ne construit pas une acquisition là-dessus.</strong> Ce n'est pas un échec de votre positionnement, c'est la nature de votre marché : une niche B2B ne se cherche pas sur Google. Vos industriels viendront de LinkedIn, de vos apporteurs et de vos rendez-vous.</p>
+    <p>Additionnées, ces requêtes font moins de 200 recherches par mois pour toute la France. <strong>On ne construit pas une acquisition là-dessus.</strong> Ce n'est pas un échec de ton positionnement, c'est la nature de ton marché : une niche B2B ne se cherche pas sur Google. Tes industriels viendront de LinkedIn, de tes apporteurs et de tes rendez-vous.</p>
 
-    <h3>Ensuite les requêtes qui existent</h3>
+    <h3>Ensuite le gisement que personne n'avait regardé</h3>
     <div class="chart">
-      <div class="chart-t">Votre univers sémantique réel</div>
-      <div class="chart-s">Recherches mensuelles · en ambre, la requête que vous n'utilisez pas et qui pèse le plus</div>
+      <div class="chart-t">L'animation culinaire en entreprise</div>
+      <div class="chart-s">Recherches mensuelles en France · avec le coût du clic, qui mesure l'intention commerciale</div>
+      <div class="bar-row"><span class="bar-lab">team building cuisine · 4,71 €</span><span class="bar-track"><span class="bar-fill bl" style="width:100%"></span></span><span class="bar-val">720</span></div>
+      <div class="bar-row"><span class="bar-lab">team building culinaire · 4,27 €</span><span class="bar-track"><span class="bar-fill bl" style="width:67%"></span></span><span class="bar-val">480</span></div>
+      <div class="bar-row"><span class="bar-lab">consultant restauration · 1,01 €</span><span class="bar-track"><span class="bar-fill bl" style="width:36%"></span></span><span class="bar-val">260</span></div>
+      <div class="bar-row"><span class="bar-lab">atelier cuisine entreprise · 5,99 €</span><span class="bar-track"><span class="bar-fill bl" style="width:29%"></span></span><span class="bar-val">210</span></div>
+      <div class="bar-row"><span class="bar-lab">animation culinaire entreprise · 2,43 €</span><span class="bar-track"><span class="bar-fill bl" style="width:29%"></span></span><span class="bar-val">210</span></div>
+      <div class="bar-row"><span class="bar-lab">atelier culinaire team building · 6,89 €</span><span class="bar-track"><span class="bar-fill bl" style="width:24%"></span></span><span class="bar-val">170</span></div>
+      <div class="bar-row"><span class="bar-lab">formation cuisine professionnelle · 1,55 €</span><span class="bar-track"><span class="bar-fill bl" style="width:7%"></span></span><span class="bar-val">50</span></div>
+    </div>
+
+    <div class="callout note">
+      <span class="tag">Pourquoi le coût du clic compte plus que le volume</span>
+      <p>Un annonceur qui paie <strong>6,89 € un seul clic</strong> sur « atelier culinaire team building » ne le fait pas par plaisir. Il le fait parce que ce clic se transforme en devis, et le devis en contrat. <strong>Le coût du clic est le meilleur indicateur d'intention commerciale qui existe.</strong></p>
+      <p style="margin-bottom:0">À comparer : « huile essentielle alimentaire », 170 recherches, coût du clic à <strong>0,28 €</strong>. Vingt-cinq fois moins. Personne ne se bat pour ces clics parce qu'ils rapportent peu.</p>
+    </div>
+
+    <h3>Et ton univers produit</h3>
+    <div class="chart">
+      <div class="chart-t">Les huiles essentielles</div>
+      <div class="chart-s">Recherches mensuelles · en ambre, la requête que tu n'utilises pas et qui pèse le plus</div>
       <div class="bar-row"><span class="bar-lab">arôme naturel</span><span class="bar-track"><span class="bar-fill" style="width:100%"></span></span><span class="bar-val">480</span></div>
       <div class="bar-row"><span class="bar-lab">clean label</span><span class="bar-track"><span class="bar-fill" style="width:67%"></span></span><span class="bar-val">320</span></div>
       <div class="bar-row"><span class="bar-lab">huile essentielle <b>alimentaire</b></span><span class="bar-track"><span class="bar-fill hi" style="width:35%"></span></span><span class="bar-val">170</span></div>
@@ -355,41 +385,18 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
 
     <div class="callout warn">
       <span class="tag">La correction qui ne coûte rien</span>
-      <p>« Huile essentielle <strong>culinaire</strong> », l'expression qui structure votre site aujourd'hui, pèse <strong>20 recherches par mois</strong>. « Huile essentielle <strong>alimentaire</strong> » en pèse <strong>170</strong>.</p>
-      <p>Le vocabulaire du métier n'est pas celui du marché. On garde « culinaire » dans vos textes, parce que c'est votre mot et qu'il porte votre identité. On met « alimentaire » et « comestible » dans les titres et les balises, là où Google regarde.</p>
+      <p>« Huile essentielle <strong>culinaire</strong> », l'expression qui structure ton site aujourd'hui, pèse <strong>20 recherches par mois</strong>. « Huile essentielle <strong>alimentaire</strong> » en pèse <strong>170</strong>.</p>
+      <p>Le vocabulaire du métier n'est pas celui du marché. On garde « culinaire » dans tes textes, parce que c'est ton mot et qu'il porte ton identité. On met « alimentaire » et « comestible » dans les titres et les balises, là où Google regarde.</p>
     </div>
 
     <h3>Le cas du combava</h3>
     <div class="chart">
       <div class="chart-t">22 200 recherches par mois</div>
-      <div class="chart-s">Et pourquoi ça ne vous rapportera rien</div>
+      <div class="chart-s">Et pourquoi ça ne te rapportera rien</div>
       <div class="bar-row"><span class="bar-lab">combava</span><span class="bar-track"><span class="bar-fill hi" style="width:100%"></span></span><span class="bar-val">22 200</span></div>
       <div class="bar-row"><span class="bar-lab">huile essentielle combava</span><span class="bar-track"><span class="bar-fill" style="width:1%"></span></span><span class="bar-val">30</span></div>
     </div>
-    <p>C'est un volume énorme, et c'est un piège. Les gens qui tapent « combava » veulent savoir ce que c'est et où en acheter pour leur cuisine. <strong>Ce sont des curieux, pas des acheteurs professionnels.</strong> Un article là-dessus vous apportera du trafic sans vous apporter un seul client. On en écrira un, mais en dernier, et pour la notoriété. Vous avez dit ne pas vouloir payer pour du volume qui ne sert à rien. C'est exactement ce dont il s'agit.</p>
-
-    <h3>Les 12 requêtes qu'on va travailler</h3>
-    <div class="tw">
-      <table>
-        <thead><tr><th>Requête</th><th class="num">Vol./mois</th><th class="num">Difficulté</th><th>Cible</th><th>Priorité</th></tr></thead>
-        <tbody>
-          <tr><td>huile essentielle hydrosoluble</td><td class="num">50</td><td class="num">18</td><td>Fromagers, boissons</td><td class="ok">★★★★★</td></tr>
-          <tr><td>huiles essentielles hydrosolubles</td><td class="num">50</td><td class="num">16</td><td>Fromagers, boissons</td><td class="ok">★★★★★</td></tr>
-          <tr><td>huile essentielle alimentaire</td><td class="num">170</td><td class="num">15</td><td>Chefs, artisans</td><td>★★★★</td></tr>
-          <tr><td>huile essentielle comestible</td><td class="num">110</td><td class="num">10</td><td>Chefs, artisans</td><td>★★★★</td></tr>
-          <tr><td>huiles essentielles comestibles</td><td class="num">90</td><td class="num">15</td><td>Chefs, artisans</td><td>★★★★</td></tr>
-          <tr><td>huile essentielle cuisine</td><td class="num">90</td><td class="num">10</td><td>Chefs</td><td>★★★</td></tr>
-          <tr><td>huiles essentielles en cuisine</td><td class="num">50</td><td class="num">9</td><td>Chefs</td><td>★★★</td></tr>
-          <tr><td>recette huile essentielle</td><td class="num">70</td><td class="num">10</td><td>Chefs</td><td>★★★</td></tr>
-          <tr><td>arôme naturel définition</td><td class="num">90</td><td class="num">20</td><td>R&amp;D, fromagers</td><td>★★★</td></tr>
-          <tr><td>arôme naturel de citron</td><td class="num">50</td><td class="num">8</td><td>R&amp;D, fromagers</td><td>★★★</td></tr>
-          <tr><td>consultant agroalimentaire</td><td class="num">50</td><td class="num">13</td><td>Industriels</td><td>★★★</td></tr>
-          <tr><td>consultant culinaire</td><td class="num">50</td><td class="num">13</td><td>Industriels</td><td>★★</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="small"><strong>Difficulté</strong> : de 0 à 100. En dessous de 20, une requête est atteignable pour un site jeune. Toutes celles-ci le sont.</p>
-    <p><strong>Potentiel total travaillé : environ 930 recherches par mois.</strong> En en captant 20 à 30 % à douze mois, ce qui serait un bon résultat, cela donne <strong>250 à 350 visites organiques par mois</strong>. C'est peu, et c'est la réalité de votre marché. Réparer votre passerelle LinkedIn vous en donne 60 sans écrire une ligne.</p>
+    <p>C'est un volume énorme, et c'est un piège. Les gens qui tapent « combava » veulent savoir ce que c'est et où en acheter pour leur cuisine. <strong>Ce sont des curieux, pas des acheteurs professionnels.</strong> Un article là-dessus t'apportera du trafic sans t'apporter un seul client. On en écrira un, mais en dernier, et pour la notoriété. Tu as dit ne pas vouloir payer pour du volume qui ne sert à rien. C'est exactement ce dont il s'agit.</p>
   </div>
 </section>
 
@@ -404,16 +411,21 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
       <table>
         <thead><tr><th class="num">Pos.</th><th>Site</th><th>Nature</th></tr></thead>
         <tbody>
-          <tr><td class="num">1</td><td>aroma-zone.com</td><td>Boutique grand public</td></tr>
+          <tr><td class="num">1</td><td>aroma-zone.com</td><td>Aromathérapie et cosmétique maison</td></tr>
           <tr><td class="num">2</td><td>propos-nature.com</td><td>Boutique</td></tr>
           <tr><td class="num">3</td><td>terredoc.com</td><td>Blog de boutique</td></tr>
-          <tr><td class="num">4</td><td>compagnie-des-sens.fr</td><td>Boutique</td></tr>
+          <tr><td class="num">4</td><td>compagnie-des-sens.fr</td><td>Aromathérapie</td></tr>
           <tr><td class="num">5</td><td>vanessences.fr</td><td>Boutique</td></tr>
           <tr><td class="num">…</td><td>jusqu'à la position 15</td><td>Boutiques et Amazon</td></tr>
         </tbody>
       </table>
     </div>
-    <p><strong>Quinze positions, quinze boutiques.</strong> Aucun expert, aucun consultant, aucun contenu professionnel. Google a décidé que cette requête est commerciale et grand public. On peut y entrer dans le top 10, mais on n'ira pas prendre la place d'Aroma-Zone, et surtout : on y attirerait des particuliers cherchant un flacon à 8 €.</p>
+
+    <div class="callout note">
+      <span class="tag">Sur Aroma-Zone, ton intuition était bonne</span>
+      <p>Aroma-Zone est d'abord une marque d'aromathérapie et de cosmétique maison. Leur blog s'appelle littéralement « Aromathérapie et Cosmétique maison ». <strong>Ils ont bien une gamme culinaire</strong>, avec des trios d'huiles essentielles pour recettes salées et sucrées, et des contenus dédiés. Mais c'est une gamme annexe, vendue en coffrets cadeaux, sur un standard de qualité HEBBD qui est un référentiel botanique et biochimique, pas un référentiel alimentaire ni réglementaire.</p>
+      <p style="margin-bottom:0"><strong>Et c'est précisément ce qui rend cette page de résultats inintéressante pour toi.</strong> La première position est tenue par un acteur qui vend des coffrets cadeaux à des particuliers. Ça ne dit pas que la requête est disputée par des professionnels. Ça dit qu'elle est grand public, et que s'y battre t'amènerait des gens qui cherchent un flacon à 8 €.</p>
+    </div>
 
     <h3>Sur « huile essentielle hydrosoluble » (100/mois cumulé)</h3>
     <div class="tw">
@@ -435,44 +447,44 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
     <div class="callout">
       <span class="tag">Voilà l'opportunité</span>
       <p>Cette page de résultats est incohérente. De la cosmétique, de l'artisanat Etsy, un brevet, Instagram. <strong>Google ne sait pas quoi servir sur cette requête, parce que personne ne l'a écrite correctement côté alimentaire.</strong></p>
-      <p>100 recherches par mois, difficulté 16-18, aucun concurrent pertinent. C'est la seule requête de votre univers où vous pouvez prendre la première place, <em>et</em> où cette place vous amènera les bonnes personnes : des gens bloqués sur une dispersion dans une phase aqueuse. Et vous avez déjà l'article.</p>
+      <p>100 recherches par mois, difficulté 16-18, aucun concurrent pertinent. C'est la seule requête de ton univers produit où tu peux prendre la première place, <em>et</em> où cette place t'amènera les bonnes personnes : des gens bloqués sur une dispersion dans une phase aqueuse. Et tu as déjà l'article.</p>
     </div>
 
-    <h3>Le concurrent que vous devez connaître</h3>
+    <h3>Le concurrent que tu dois connaître</h3>
     <p><strong>Primessence</strong>, grossiste B2B en huiles essentielles du groupe Exaflor, vend de 1 à 20 kg aux professionnels. Ils publient un guide expert très complet sur les huiles essentielles dans l'industrie agroalimentaire, qui traite le règlement 1334/2008, les catégories d'étiquetage, la règle des 95 %, les méthodes d'extraction, la microencapsulation, et les applications par secteur, dont les boissons et les produits laitiers.</p>
 
     <div class="callout alert">
       <span class="tag">Ce que ça change</span>
-      <p>Le terrain de la pédagogie réglementaire <strong>n'est pas vide</strong>. Primessence l'occupe, avec un contenu antérieur et un site plus fort. Sur Google, vous arriveriez second.</p>
+      <p>Le terrain de la pédagogie réglementaire <strong>n'est pas vide</strong>. Primessence l'occupe, avec un contenu antérieur et un site plus fort. Sur Google, tu arriverais second.</p>
       <p>Deux angles morts subsistent, et ils sont vérifiés. <strong>Primessence ne mentionne pas une seule fois l'hydrosoluble</strong>, dans un guide par ailleurs très technique. Et ils expliquent comment déclarer un arôme, jamais comment ne plus avoir à écrire ce mot, parce que c'est ce qu'ils vendent.</p>
-      <p><strong>Votre argument d'étiquette reste excellent. Il change juste de canal : LinkedIn et rendez-vous, pas référencement.</strong></p>
+      <p style="margin-bottom:0"><strong>Ton argument d'étiquette reste excellent. Il change juste de canal : LinkedIn et rendez-vous, pas référencement.</strong></p>
     </div>
 
-    <h3>Votre place réelle sur le marché</h3>
+    <h3>Ta place réelle sur le marché</h3>
     <div class="tw">
       <table>
-        <thead><tr><th>Marché</th><th>Ce qu'on y achète</th><th>Votre position</th></tr></thead>
+        <thead><tr><th>Marché</th><th>Ce qu'on y achète</th><th>Ta position</th></tr></thead>
         <tbody>
-          <tr><td>Maisons d'arômes<br><span class="small">Givaudan, IFF, Robertet, MANE</span></td><td>Une formule industrialisée</td><td class="no">Inaudible. Vous n'avez pas d'usine.</td></tr>
-          <tr><td>Fournisseurs d'huiles essentielles<br><span class="small">Landema, Biolandes, Haromatics, Primessence</span></td><td>Un catalogue, un prix</td><td class="no">Vulnérable. Vous êtes 2 à 4× plus cher pour un flacon comparable.</td></tr>
+          <tr><td>Maisons d'arômes<br><span class="small">Givaudan, IFF, Robertet, MANE</span></td><td>Une formule industrialisée</td><td class="no">Inaudible. Tu n'as pas d'usine.</td></tr>
+          <tr><td>Fournisseurs d'huiles essentielles<br><span class="small">Landema, Biolandes, Haromatics, Primessence</span></td><td>Un catalogue, un prix</td><td class="no">Vulnérable. Tu es 2 à 4× plus cher pour un flacon comparable.</td></tr>
           <tr><td><strong>Expertise du goût appliquée</strong></td><td>Un problème résolu</td><td class="ok">Fort. Quasi personne en face.</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Tout se joue dans un déplacement. <strong>Tant que votre site présente des produits, on compare un flacon à un flacon, et vous perdez.</strong> Dès qu'il présente des problèmes résolus, la comparaison n'a plus d'objet.</p>
+    <p>Tout se joue dans un déplacement. <strong>Tant que ton site présente des produits, on compare un flacon à un flacon, et tu perds.</strong> Dès qu'il présente des problèmes résolus, la comparaison n'a plus d'objet.</p>
   </div>
 </section>
 
 <!-- ============ VISIBILITE ============ -->
 <section id="visibilite">
   <div class="wrap">
-    <div class="eyebrow">05 — Votre visibilité</div>
+    <div class="eyebrow">05 — Ta visibilité</div>
     <h2>Google, les IA, LinkedIn : le même diagnostic trois fois</h2>
 
     <h3>Ce qui marche sur LinkedIn, et il faut le dire</h3>
     <div class="kpis">
-      <div class="kpi good"><div class="n">3,3 %</div><div class="l">Taux d'engagement, au-dessus de la moyenne LinkedIn. Votre contenu plaît vraiment.</div></div>
-      <div class="kpi good"><div class="n">51 %</div><div class="l">De portée hors réseau. L'algorithme pousse votre contenu au-delà de vos relations. C'est rare et c'est déjà acquis.</div></div>
+      <div class="kpi good"><div class="n">3,3 %</div><div class="l">Taux d'engagement, au-dessus de la moyenne LinkedIn. Ton contenu plaît vraiment.</div></div>
+      <div class="kpi good"><div class="n">51 %</div><div class="l">De portée hors réseau. L'algorithme pousse ton contenu au-delà de tes relations. C'est rare et c'est déjà acquis.</div></div>
       <div class="kpi good"><div class="n">+29 %</div><div class="l">De croissance sur la période. La dynamique est bonne.</div></div>
     </div>
     <p>Il n'y a rien à réparer du côté de l'attraction. C'est important à dire avant la suite, qui est sévère.</p>
@@ -480,66 +492,153 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
     <h3>Ce qui ne marche pas</h3>
     <div class="tw">
       <table>
-        <thead><tr><th>Action de vos lecteurs</th><th>Ce que ça veut dire</th><th class="num">Volume</th></tr></thead>
+        <thead><tr><th>Action de tes lecteurs</th><th>Ce que ça veut dire</th><th class="num">Volume</th></tr></thead>
         <tbody>
           <tr><td>Réaction</td><td>« J'aime ce que tu dis »</td><td class="num">1 553</td></tr>
           <tr><td>Commentaire</td><td>« Je veux en parler »</td><td class="num">186</td></tr>
           <tr><td>Republication</td><td>« Mon réseau doit voir ça »</td><td class="num no">13</td></tr>
           <tr><td>Enregistrement</td><td>« J'en aurai besoin plus tard »</td><td class="num no">6</td></tr>
-          <tr><td><strong>Clic vers votre site</strong></td><td>« Je veux en savoir plus »</td><td class="num no">35</td></tr>
+          <tr><td><strong>Clic vers ton site</strong></td><td>« Je veux en savoir plus »</td><td class="num no">35</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Une réaction coûte une seconde et n'engage à rien. Un enregistrement veut dire que quelqu'un a jugé votre contenu utile pour son travail futur. <strong>Six enregistrements en cinq mois et demi, sur un contenu vu 53 385 fois.</strong></p>
-    <p>Vos trois meilleurs posts sont du récit personnel réunionnais. C'est du bon contenu, il vous donne une singularité, et il faut le garder. Mais personne n'enregistre un récit de course à pied pour le ressortir en réunion R&amp;D. <strong>Aucun de vos posts ne porte sur l'application industrielle. Il n'y a donc rien à garder, rien à transmettre à un collègue.</strong></p>
+    <p>Une réaction coûte une seconde et n'engage à rien. Un enregistrement veut dire que quelqu'un a jugé ton contenu utile pour son travail futur. <strong>Six enregistrements en cinq mois et demi, sur un contenu vu 53 385 fois.</strong></p>
+    <p>Tes trois meilleurs posts sont du récit personnel réunionnais. C'est du bon contenu, il te donne une singularité, et il faut le garder. Mais personne n'enregistre un récit de course à pied pour le ressortir en réunion R&amp;D. <strong>Aucun de tes posts ne porte sur l'application industrielle. Il n'y a donc rien à garder, rien à transmettre à un collègue.</strong></p>
 
     <div class="callout">
       <span class="tag">Le calcul qui justifie tout le reste</span>
-      <p>Passer de 0,066 % à 0,5 % de taux de clic, ce qui reste sous la moyenne du secteur, fait passer votre trafic de <strong>6 à environ 50 visites par mois</strong>. Sans une impression de plus, sans un abonné de plus, sans un euro.</p>
-      <p>Comment : <strong>un lien pertinent dans le corps de chaque post</strong>, lié au sujet traité, pointant vers une page précise et jamais vers votre accueil. C'est applicable dès votre prochaine publication.</p>
+      <p>Passer de 0,066 % à 0,5 % de taux de clic, ce qui reste sous la moyenne du secteur, fait passer ton trafic de <strong>6 à environ 50 visites par mois</strong>. Sans une impression de plus, sans un abonné de plus, sans un euro.</p>
+      <p>Comment : <strong>un lien pertinent dans le corps de chaque post</strong>, lié au sujet traité, pointant vers une page précise et jamais vers ton accueil. C'est applicable dès ta prochaine publication.</p>
     </div>
 
     <h3>Dans les moteurs IA</h3>
     <div class="grid2">
       <div class="card">
-        <h4>Quand on cherche votre nom</h4>
-        <p class="ok" style="font-weight:700">Excellent</p>
-        <p>ChatGPT, Claude ou Perplexity restituent votre parcours, le restaurant l'Agape, vos livres, votre procédé d'éco-extraction, votre marque Délices &amp; Sens. La matière est riche et concordante.</p>
+        <h4>Quand on cherche ton nom</h4>
+        <p class="ok" style="font-weight:600">Excellent</p>
+        <p>ChatGPT, Claude ou Perplexity restituent ton parcours, le restaurant l'Agape, tes livres, ton procédé d'éco-extraction, ta marque Délices &amp; Sens. La matière est riche et concordante.</p>
       </div>
       <div class="card">
-        <h4>Quand on cherche votre problème</h4>
-        <p class="no" style="font-weight:700">Absent</p>
-        <p>Sur « expert huiles essentielles industrie agroalimentaire », les moteurs remontent Primessence, Europages, Kompass, DirectIndustry. <strong>Vous n'apparaissez pas.</strong></p>
+        <h4>Quand on cherche ton problème</h4>
+        <p class="no" style="font-weight:600">Absent</p>
+        <p>Sur « expert huiles essentielles industrie agroalimentaire », les moteurs remontent Primessence, Europages, Kompass, DirectIndustry. <strong>Tu n'apparais pas.</strong></p>
       </div>
     </div>
-    <p>C'est le même diagnostic que sur Google, obtenu par une troisième méthode : <strong>fort sur votre nom, nul sur votre problème</strong>. Quelqu'un qui ne vous connaît pas ne vous trouve pas.</p>
+    <p>C'est le même diagnostic que sur Google, obtenu par une troisième méthode : <strong>fort sur ton nom, nul sur ton problème</strong>. Quelqu'un qui ne te connaît pas ne te trouve pas.</p>
 
     <div class="callout warn">
       <span class="tag">Un frein invisible, et gratuit à lever</span>
-      <p>Vous existez en ligne sous cinq identités : Aymeric Pataud®, AP Créations, Délices &amp; Sens, le restaurant l'Agape, le projet La Révolution du goût. Et sous deux adresses contradictoires : Amiens sur vos mentions légales, La Saline-les-Hauts dans nos échanges.</p>
-      <p>Google et les moteurs IA construisent une fiche d'entité. Quand les signaux se contredisent, <strong>votre notoriété se répartit sur cinq entités faibles au lieu de s'accumuler sur une forte</strong>. Ça se règle sans créer un seul contenu.</p>
+      <p>Tu existes en ligne sous cinq identités : Aymeric Pataud®, AP Créations, Délices &amp; Sens, le restaurant l'Agape, le projet La Révolution du goût. Et sous deux adresses contradictoires : Amiens sur tes mentions légales, La Saline-les-Hauts dans nos échanges.</p>
+      <p>Google et les moteurs IA construisent une fiche d'entité. Quand les signaux se contredisent, <strong>ta notoriété se répartit sur cinq entités faibles au lieu de s'accumuler sur une forte</strong>. Ça se règle sans créer un seul contenu.</p>
     </div>
 
-    <h3>Votre fiche Google Business</h3>
-    <p>Vous avez posé la question. Réponse honnête : <strong>utile, et secondaire</strong>. Une fiche se positionne sur des recherches locales et sur votre nom, pas sur « huile essentielle alimentaire ». Elle ne vous amènera pas un directeur R&amp;D. Elle consolidera votre entité, ce qui sert le point ci-dessus.</p>
-    <p>Recommandation : une fiche <strong>en zone de service, sans adresse affichée</strong>, avec la France comme zone desservie. Ça évite le problème de votre déménagement en 2027 et ça convient à une activité qui se déplace chez le client. Trente minutes de travail, priorité basse.</p>
-    <p class="small"><strong>À trancher avant</strong> : votre atelier est à Amiens ou à La Saline-les-Hauts ? Une fiche créée avec la mauvaise adresse coûte plus cher à corriger qu'à créer.</p>
+    <h3>Ta fiche Google Business</h3>
+    <p>Tu as posé la question. Réponse honnête : <strong>utile, et secondaire</strong>. Une fiche se positionne sur des recherches locales et sur ton nom, pas sur « huile essentielle alimentaire ». Elle ne t'amènera pas un directeur R&amp;D.</p>
+    <p><strong>Une exception, et elle compte : le team building.</strong> Une fiche bien remplie te fait apparaître sur « atelier cuisine entreprise » et « team building » dans ta zone. Là, c'est de l'acquisition directe. Ce qui change complètement sa priorité, à La Réunion en particulier.</p>
+    <p class="small"><strong>À trancher avant de la créer</strong> : ton atelier est à Amiens ou à La Saline-les-Hauts ? Une fiche créée avec la mauvaise adresse coûte plus cher à corriger qu'à créer.</p>
+  </div>
+</section>
+
+<!-- ============ LA REUNION ============ -->
+<section id="reunion">
+  <div class="wrap">
+    <div class="eyebrow">06 — La Réunion</div>
+    <h2>Douze mois pour exploiter une fenêtre qui se referme</h2>
+    <p class="lead">Tu rentres en métropole en août 2027. À La Réunion, tu déclares une concurrence quasi inexistante sur le consulting. C'est le seul marché où tu n'as personne en face, et il expire dans un an.</p>
+
+    <div class="callout alert">
+      <span class="tag">Le problème d'arithmétique</span>
+      <p>Le référencement met <strong>12 à 18 mois</strong> à produire ses effets. Il te reste <strong>12 mois</strong>.</p>
+      <p style="margin-bottom:0">Tu as raison : sur ce périmètre, le SEO n'aura pas le temps. Ce qui laisse deux leviers qui produisent en semaines et pas en trimestres. <strong>Google Ads, et le travail direct d'une liste.</strong></p>
+    </div>
+
+    <h3>Ce que pèse le marché local</h3>
+    <div class="kpis">
+      <div class="kpi info"><div class="n">552</div><div class="l">Unités légales dont l'activité principale relève de l'agroalimentaire à La Réunion (INSEE, 2022)</div></div>
+      <div class="kpi info"><div class="n">153</div><div class="l">Industriels adhérents de l'ADIR, représentant <strong>75 % du chiffre d'affaires du secteur</strong></div></div>
+      <div class="kpi info"><div class="n">4 640</div><div class="l">Emplois en équivalent temps plein dans l'agroalimentaire réunionnais, soit un quart de l'emploi industriel local</div></div>
+    </div>
+
+    <div class="callout">
+      <span class="tag">Le raisonnement qui découle de ces chiffres</span>
+      <p><strong>153 industriels, ce n'est pas un marché. C'est une liste.</strong></p>
+      <p style="margin-bottom:0">On ne fait pas de publicité pour toucher 153 entreprises sur une île de 870 000 habitants. On les contacte. L'ADIR est un point d'entrée unique vers 75 % du chiffre d'affaires du secteur, et une intervention ou un atelier chez eux vaut plus que n'importe quel budget publicitaire sur ce périmètre.</p>
+    </div>
+
+    <h3>Où Google Ads fonctionne vraiment ici</h3>
+    <p>Pas sur les huiles essentielles : zéro recherche localement, comme au national. <strong>Sur l'animation culinaire en entreprise, oui, et les chiffres sont bons.</strong></p>
+
+    <div class="chart">
+      <div class="chart-t">Les requêtes locales exploitables</div>
+      <div class="chart-s">Recherches mensuelles · coût du clic · difficulté de positionnement</div>
+      <div class="bar-row"><span class="bar-lab">traiteur la réunion · 0,43 € · KD 19</span><span class="bar-track"><span class="bar-fill bl" style="width:100%"></span></span><span class="bar-val">320</span></div>
+      <div class="bar-row"><span class="bar-lab">team building la réunion · 0 € · KD 8</span><span class="bar-track"><span class="bar-fill bl" style="width:22%"></span></span><span class="bar-val">70</span></div>
+      <div class="bar-row"><span class="bar-lab">cours de cuisine la réunion · 0,57 € · KD 22</span><span class="bar-track"><span class="bar-fill bl" style="width:22%"></span></span><span class="bar-val">70</span></div>
+      <div class="bar-row"><span class="bar-lab">séminaire la réunion · 0 €</span><span class="bar-track"><span class="bar-fill" style="width:3%"></span></span><span class="bar-val">10</span></div>
+      <div class="bar-row"><span class="bar-lab">chef à domicile la réunion · 0 €</span><span class="bar-track"><span class="bar-fill" style="width:3%"></span></span><span class="bar-val">10</span></div>
+      <div class="bar-row"><span class="bar-lab">produits locaux la réunion</span><span class="bar-track"><span class="bar-fill z" style="width:1%"></span></span><span class="bar-val z">0</span></div>
+    </div>
+
+    <div class="callout note">
+      <span class="tag">Le chiffre à retenir</span>
+      <p><strong>« Team building la réunion » : 70 recherches par mois, coût du clic à 0 €, difficulté 8.</strong></p>
+      <p style="margin-bottom:0">Un coût du clic à zéro veut dire une chose simple : <strong>personne n'achète ces mots sur l'île.</strong> Aucun annonceur en face. Tu arriverais sur un espace publicitaire vide, sur une requête que des entreprises tapent quand elles cherchent exactement ce que tu proposes déjà.</p>
+    </div>
+
+    <h3>Ce que ça coûterait, et le calcul</h3>
+    <p>Aucun devis n'a été demandé à Google, ce qui suit est une estimation construite à partir des volumes et des coûts au clic relevés. Je montre le calcul pour que tu puisses le contester.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Étape</th><th>Hypothèse</th><th class="num">Résultat</th></tr></thead>
+        <tbody>
+          <tr><td>Recherches locales pertinentes par mois</td><td>team building + cours de cuisine + longue traîne</td><td class="num">~150 à 200</td></tr>
+          <tr><td>Part captée par tes annonces</td><td>25 à 35 %, réaliste sans concurrence publicitaire</td><td class="num">40 à 70 clics</td></tr>
+          <tr><td>Coût du clic constaté</td><td>0 à 0,57 € selon la requête</td><td class="num">~0,80 € max</td></tr>
+          <tr><td><strong>Budget mensuel</strong></td><td>clics × coût du clic</td><td class="num"><strong>30 à 60 €</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Fourchette prudente : compte 100 à 150 € par mois pour absorber les enchères non anticipées et les requêtes larges. Sur douze mois, on parle d'un budget de l'ordre de 1 200 à 1 800 €.</p>
+
+    <div class="callout">
+      <span class="tag">L'argument qui compte le plus, et ce n'est pas le coût</span>
+      <p><strong>Google Ads te donne en trois semaines une donnée que le SEO mettrait un an à produire :</strong> qui clique, sur quels mots, et ce qu'ils font ensuite.</p>
+      <p style="margin-bottom:0">Sur une fenêtre de douze mois, c'est décisif. Tu sauras avant de partir quelles requêtes convertissent réellement, et tu arriveras en métropole avec un compte publicitaire déjà calibré sur un marché national où « team building cuisine » pèse 720 recherches par mois à 4,71 € le clic. <strong>Ce que tu apprends à La Réunion à 0 € le clic, tu le réutilises en métropole où il en coûte cinq.</strong></p>
+    </div>
+
+    <h3>Le plan Réunion sur douze mois</h3>
+    <div class="tl">
+      <div class="tl-i"><div class="tl-d">Septembre 2026</div><h4>Fiche Google Business en priorité haute</h4><p>Pas pour les huiles essentielles, pour le team building et les ateliers. C'est ce qui te fait apparaître sur les recherches locales. Trente minutes, une fois l'adresse tranchée.</p></div>
+      <div class="tl-i"><div class="tl-d">Octobre 2026</div><h4>Une page « Animation culinaire en entreprise »</h4><p>Elle n'existe pas sur ton site. C'est la page d'atterrissage des annonces, et elle sert aussi la métropole après 2027.</p></div>
+      <div class="tl-i"><div class="tl-d">Novembre 2026</div><h4>Google Ads, campagne locale</h4><p>Budget de test à 100 €/mois, ciblage La Réunion, sur team building, atelier cuisine entreprise, animation culinaire. Mesure au bout de six semaines.</p></div>
+      <div class="tl-i"><div class="tl-d">Décembre 2026 – février 2027</div><h4>L'ADIR et la liste des 153</h4><p>Une intervention, un atelier, une démonstration. C'est le canal qui touche 75 % du chiffre d'affaires industriel local, et il ne se remplace par aucune publicité.</p></div>
+      <div class="tl-i"><div class="tl-d">Mars – mai 2027</div><h4>Sécuriser ce qui se perd</h4><p>Contrats d'approvisionnement sur le combava et les matières locales. Missions de consulting réunionnais formalisées pour continuer à distance. <strong>Une fois parti sans avoir rien écrit, ça s'éteint tout seul.</strong></p></div>
+      <div class="tl-i"><div class="tl-d">Juin – juillet 2027</div><h4>Bascule du compte Ads vers la métropole</h4><p>Mêmes mots-clés, nouveau ciblage géographique, budget recalibré sur des coûts au clic de 4 à 7 €.</p></div>
+    </div>
+
+    <div class="callout warn">
+      <span class="tag">Les deux indicateurs que personne ne pense à suivre</span>
+      <p>Ils ne mesurent pas ce que tu gagnes, mais ce que tu perds. Une fois en métropole, ils ne sont plus rattrapables.</p>
+      <p style="margin-bottom:0"><strong>Missions de consulting réunionnais sécurisées à distance : au moins 2.</strong><br>
+      <strong>Sources de matières réunionnaises contractualisées : au moins 3.</strong></p>
+    </div>
   </div>
 </section>
 
 <!-- ============ SITE ============ -->
 <section id="site">
   <div class="wrap">
-    <div class="eyebrow">06 — Le site</div>
+    <div class="eyebrow">07 — Le site</div>
     <h2>L'arborescence qui découle de tout ça</h2>
-    <p class="lead">La structure que nous avons construite tient. Elle demande quatre corrections, dont trois ne coûtent rien.</p>
+    <p class="lead">La structure que nous avons construite tient. Elle demande cinq corrections, dont trois ne coûtent rien.</p>
 
     <div class="tree">
 <pre>Accueil
 │
 ├── <b>Expertise</b>
-│   ├── L'expertise du goût            <i>votre fil rouge</i>
+│   ├── L'expertise du goût            <i>ton fil rouge</i>
 │   ├── Consulting                     <i>consultant agroalimentaire · 50/mois</i>
+│   ├── <b>Animation culinaire entreprise</b>  <i>★ NOUVELLE · 1 790/mois</i>
 │   └── Création sur-mesure            <i>sourcing, matières rares</i>
 │
 ├── <b>Huiles essentielles</b>
@@ -549,7 +648,7 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
 │
 ├── <b>Pour qui</b>
 │   ├── Industriels agroalimentaires   <i>0 recherche · page de conversion</i>
-│   ├── <b>Fromagers &amp; boissons</b>          <i>★ à séparer des artisans</i>
+│   ├── <b>Fromagers &amp; boissons</b>          <i>à séparer des artisans</i>
 │   ├── Chefs &amp; traiteurs              <i>90/mois</i>
 │   └── Artisans &amp; producteurs
 │
@@ -558,33 +657,37 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
 ├── Le chef                            <i>+ TEDx, livres, entité</i>
 ├── <b>Presse</b>                             <i>nouvelle page · 30 min de travail</i>
 ├── Blog
-└── Parler de votre projet             <i>un contact par profil</i></pre>
+└── Parler de ton projet               <i>un contact par profil</i></pre>
     </div>
 
-    <h3>Les quatre corrections</h3>
+    <h3>Les cinq corrections</h3>
     <div class="steps">
       <div class="step">
+        <h4>Créer la page « Animation culinaire en entreprise »</h4>
+        <p>1 790 recherches mensuelles, des coûts au clic de 4 à 7 €, une activité que tu exerces déjà, et aucune page pour la porter. <strong>C'est la correction la plus rentable de la liste</strong>, et c'est aussi la page d'atterrissage de tes annonces à La Réunion.</p>
+      </div>
+      <div class="step">
         <h4>Changer « culinaires » en « alimentaires » dans les titres</h4>
-        <p>170 recherches contre 20. On garde « culinaire » dans vos textes, c'est votre mot. On le sort des balises, là où Google regarde. <strong>Coût : une édition.</strong></p>
+        <p>170 recherches contre 20. On garde « culinaire » dans tes textes, c'est ton mot. On le sort des balises, là où Google regarde. <strong>Coût : une édition.</strong></p>
       </div>
       <div class="step">
         <h4>Muscler la page hydrosolubles</h4>
-        <p>C'est la page la plus importante du site pour l'acquisition, et probablement la plus légère aujourd'hui. Elle doit devenir le contenu de référence francophone sur le sujet, parce que personne ne l'occupe. Elle doit répondre en clair à la question centrale : quelle différence avec un arôme hydrosoluble.</p>
+        <p>C'est ta page la plus importante sur l'univers produit, et probablement la plus légère aujourd'hui. Elle doit devenir le contenu de référence francophone sur le sujet, parce que personne ne l'occupe. Elle doit répondre en clair à la question centrale : quelle différence avec un arôme hydrosoluble.</p>
       </div>
       <div class="step">
         <h4>Reformuler « le segment que je suis seul à couvrir »</h4>
-        <p><strong>Attaquable en l'état.</strong> Haromatics vend déjà des solutions hydrosolubles pour boissons, boulangerie et produits laitiers. Le premier prospect qui vérifie fragilise tout le reste de votre discours. Ce qui est probablement vrai et défendable : vous êtes seul à proposer une hydrosolubilité <em>qui conserve la mention « huile essentielle » à l'étiquette</em>. C'est plus précis et beaucoup plus fort.</p>
+        <p><strong>Attaquable en l'état.</strong> Haromatics vend déjà des solutions hydrosolubles pour boissons, boulangerie et produits laitiers. Le premier prospect qui vérifie fragilise tout le reste de ton discours. Ce qui est probablement vrai et défendable : tu es seul à proposer une hydrosolubilité <em>qui conserve la mention « huile essentielle » à l'étiquette</em>. C'est plus précis et beaucoup plus fort.</p>
       </div>
       <div class="step">
         <h4>Charger la page « Le chef » et créer une page presse</h4>
-        <p>Vos preuves les plus fortes n'ont aucune page : le TEDx, les quatre livres, la presse qui vous sollicite trois à quatre fois par an. Ce sont les pages que Google et les IA lisent pour construire votre fiche d'entité.</p>
+        <p>Tes preuves les plus fortes n'ont aucune page : le TEDx, les quatre livres, la presse qui te sollicite trois à quatre fois par an. Ce sont les pages que Google et les IA lisent pour construire ta fiche d'entité.</p>
       </div>
     </div>
 
     <div class="callout warn">
       <span class="tag">Le point contre-intuitif</span>
-      <p><strong>Votre page « Industriels agroalimentaires » ne recevra aucun trafic Google.</strong> Aucune requête industrielle n'a de volume. Ce n'est pas une raison de la supprimer, c'est une raison de changer ce qu'on en attend : elle convertit un directeur R&amp;D arrivé depuis un post LinkedIn ou un lien envoyé par un apporteur.</p>
-      <p>Une page peut être essentielle et n'apparaître jamais dans Google. C'est le cas de la moitié de votre site, et c'est normal pour du B2B de niche.</p>
+      <p><strong>Ta page « Industriels agroalimentaires » ne recevra aucun trafic Google.</strong> Aucune requête industrielle n'a de volume. Ce n'est pas une raison de la supprimer, c'est une raison de changer ce qu'on en attend : elle convertit un directeur R&amp;D arrivé depuis un post LinkedIn ou un lien envoyé par un apporteur.</p>
+      <p>Une page peut être essentielle et n'apparaître jamais dans Google. C'est le cas de la moitié de ton site, et c'est normal pour du B2B de niche.</p>
     </div>
   </div>
 </section>
@@ -592,61 +695,61 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
 <!-- ============ PLAN ============ -->
 <section id="plan">
   <div class="wrap">
-    <div class="eyebrow">07 — Le plan</div>
-    <h2>Six mois, dix articles, deux canaux séparés</h2>
+    <div class="eyebrow">08 — Le plan</div>
+    <h2>Six mois, dix articles, trois canaux</h2>
 
-    <h3>D'abord votre question sur le blog</h3>
+    <h3>D'abord ta question sur le blog</h3>
     <div class="callout">
       <span class="tag">Combien d'articles par mois</span>
       <p><strong>Deux par mois pendant quatre mois, puis un.</strong> Soit dix la première année, pas trente.</p>
-      <p>Le raisonnement : votre univers sémantique compte environ 25 requêtes avec un volume réel. Un article bien construit en couvre 3 à 5. <strong>Six à huit articles couvrent tout votre champ.</strong> Au-delà, on écrirait sur des requêtes à zéro recherche. Ce serait exactement le volume inutile que vous avez refusé de payer.</p>
+      <p>Le raisonnement : ton univers sémantique compte environ 25 requêtes avec un volume réel. Un article bien construit en couvre 3 à 5. <strong>Six à huit articles couvrent tout ton champ.</strong> Au-delà, on écrirait sur des requêtes à zéro recherche. Ce serait exactement le volume inutile que tu as refusé de payer.</p>
     </div>
 
-    <h3>Et votre question sur le délai</h3>
+    <h3>Et ta question sur le délai</h3>
     <div class="tl">
+      <div class="tl-i"><div class="tl-d">Immédiat</div><h4>Google Ads</h4><p>Des clics dès le premier jour, et une donnée exploitable en trois semaines. C'est le seul levier qui produit avant ton départ.</p></div>
       <div class="tl-i"><div class="tl-d">4 à 8 semaines</div><h4>Effet des corrections de vocabulaire</h4><p>Les variantes faciles et les requêtes de marque remontent.</p></div>
-      <div class="tl-i"><div class="tl-d">3 à 6 mois</div><h4>Premières positions</h4><p>Sur les requêtes à faible difficulté : hydrosoluble, comestible, en cuisine.</p></div>
+      <div class="tl-i"><div class="tl-d">3 à 6 mois</div><h4>Premières positions naturelles</h4><p>Sur les requêtes à faible difficulté : hydrosoluble, comestible, en cuisine.</p></div>
       <div class="tl-i"><div class="tl-d">6 à 12 mois</div><h4>Trafic organique mesurable</h4><p>250 à 350 visites par mois si on capte 20 à 30 % du potentiel.</p></div>
       <div class="tl-i"><div class="tl-d">12 à 18 mois</div><h4>Plafond atteint</h4><p>Le champ sémantique est saturé. Au-delà, la croissance viendra d'ailleurs.</p></div>
     </div>
-    <p class="small">À comparer : réparer votre passerelle LinkedIn vous donne 60 visites par mois <strong>en quelques semaines</strong>, et touche des industriels plutôt que des particuliers.</p>
 
-    <h3>Le principe : deux tuyaux, pas un</h3>
+    <h3>Le principe : trois canaux qui ne font pas le même travail</h3>
     <div class="tw">
       <table>
-        <thead><tr><th></th><th>Le blog</th><th>LinkedIn</th></tr></thead>
+        <thead><tr><th></th><th>Le blog</th><th>LinkedIn</th><th>Google Ads</th></tr></thead>
         <tbody>
-          <tr><td>Vise</td><td>Une requête Google</td><td>Un directeur R&amp;D dans son fil</td></tr>
-          <tr><td>Vous amène</td><td>Fromagers, chefs, artisans</td><td><strong>Industriels, dirigeants</strong></td></tr>
-          <tr><td>Format</td><td>Article écrit</td><td>Vidéo face caméra</td></tr>
-          <tr><td>Rythme</td><td>2/mois puis 1/mois</td><td>2 par semaine</td></tr>
+          <tr><td>Vise</td><td>Une requête Google</td><td>Un directeur R&amp;D dans son fil</td><td>Une entreprise qui cherche une animation</td></tr>
+          <tr><td>T'amène</td><td>Fromagers, chefs, artisans</td><td><strong>Industriels, dirigeants</strong></td><td><strong>RH, offices managers, hôtels</strong></td></tr>
+          <tr><td>Délai</td><td>6 à 12 mois</td><td>Semaines</td><td><strong>Jours</strong></td></tr>
+          <tr><td>Coût</td><td>Temps de rédaction</td><td>Gratuit</td><td>~100 €/mois à La Réunion</td></tr>
         </tbody>
       </table>
     </div>
-    <p><strong>Le blog ne vous amènera pas d'industriels, et ce n'est pas un échec du blog.</strong> C'est ce que les volumes disent. Confondre les deux canaux, c'est écrire pour personne.</p>
+    <p><strong>Le blog ne t'amènera pas d'industriels, et ce n'est pas un échec du blog.</strong> C'est ce que les volumes disent. Confondre les canaux, c'est écrire pour personne.</p>
 
     <h3>Les dix articles</h3>
     <div class="tw">
       <table>
-        <thead><tr><th>Mois</th><th>Article</th><th>Requêtes visées</th><th class="num">Vol.</th><th>Pour qui</th></tr></thead>
+        <thead><tr><th>Mois</th><th>Article</th><th class="num">Vol.</th><th>Pour qui</th></tr></thead>
         <tbody>
-          <tr><td>Oct.</td><td><strong>Pourquoi une huile essentielle ne se mélange pas dans l'eau</strong></td><td>hydrosoluble ×3</td><td class="num">120</td><td>Fromagers</td></tr>
-          <tr><td>Oct.</td><td>Comment reconnaître une huile essentielle qu'on peut vraiment ingérer</td><td>alimentaire, comestible</td><td class="num">370</td><td>Chefs</td></tr>
-          <tr><td>Nov.</td><td>Aromatiser un fromage sans écrire « arôme » sur l'étiquette</td><td>longue traîne</td><td class="num">—</td><td>Fromagers</td></tr>
-          <tr><td>Nov.</td><td>Cuisiner aux huiles essentielles : les dosages qui marchent</td><td>cuisine, dosage</td><td class="num">180</td><td>Chefs</td></tr>
-          <tr><td>Déc.</td><td>Arôme naturel : ce que le mot dit, et ce qu'il ne dit pas</td><td>arôme naturel définition</td><td class="num">140</td><td>R&amp;D</td></tr>
-          <tr><td>Déc.</td><td>Dix associations qui fonctionnent</td><td>recette huile essentielle</td><td class="num">110</td><td>Chefs</td></tr>
-          <tr><td>Janv.</td><td>À quel moment faire appel à quelqu'un de l'extérieur</td><td>consultant agroalimentaire</td><td class="num">100</td><td>Industriels</td></tr>
-          <tr><td>Janv.</td><td>Aromatiser une boisson : les contraintes que personne n'anticipe</td><td>longue traîne</td><td class="num">—</td><td>Boissons</td></tr>
-          <tr><td>Févr.</td><td>Arômes de fumée : ce que la réglementation impose de changer</td><td>arôme de fumée</td><td class="num">70</td><td>Industriels</td></tr>
-          <tr><td>Mars</td><td>Le combava : ce qu'un chef en fait, ce qu'un industriel en fait</td><td>combava</td><td class="num">22 200</td><td>Large</td></tr>
+          <tr><td>Oct.</td><td><strong>Pourquoi une huile essentielle ne se mélange pas dans l'eau</strong></td><td class="num">120</td><td>Fromagers</td></tr>
+          <tr><td>Oct.</td><td>Comment reconnaître une huile essentielle qu'on peut vraiment ingérer</td><td class="num">370</td><td>Chefs</td></tr>
+          <tr><td>Nov.</td><td>Aromatiser un fromage sans écrire « arôme » sur l'étiquette</td><td class="num">—</td><td>Fromagers</td></tr>
+          <tr><td>Nov.</td><td>Cuisiner aux huiles essentielles : les dosages qui marchent</td><td class="num">180</td><td>Chefs</td></tr>
+          <tr><td>Déc.</td><td>Arôme naturel : ce que le mot dit, et ce qu'il ne dit pas</td><td class="num">140</td><td>R&amp;D</td></tr>
+          <tr><td>Déc.</td><td>Dix associations qui fonctionnent</td><td class="num">110</td><td>Chefs</td></tr>
+          <tr><td>Janv.</td><td><strong>Ce qu'un atelier culinaire change vraiment dans une équipe</strong></td><td class="num">1 790</td><td>RH, dirigeants</td></tr>
+          <tr><td>Janv.</td><td>Aromatiser une boisson : les contraintes que personne n'anticipe</td><td class="num">—</td><td>Boissons</td></tr>
+          <tr><td>Févr.</td><td>Arômes de fumée : ce que la réglementation impose de changer</td><td class="num">70</td><td>Industriels</td></tr>
+          <tr><td>Mars</td><td>Le combava : ce qu'un chef en fait, ce qu'un industriel en fait</td><td class="num">22 200</td><td>Large</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="small">Le dernier est le seul écrit pour le volume, et c'est assumé : il apportera du trafic peu qualifié. Le premier est le plus important du plan.</p>
+    <p class="small">Le dernier est le seul écrit pour le volume, et c'est assumé : il apportera du trafic peu qualifié. Le premier et le septième sont les plus importants du plan.</p>
 
-    <h3>Le contenu qui vous manque, et c'est le seul</h3>
-    <p>Un format n'existe pas encore : <strong>vous, face caméra, en pédagogie industrielle.</strong> C'est le seul qui parle directement à un directeur R&amp;D. Six sujets à tourner <strong>en une seule journée</strong>, pas au fil de l'eau.</p>
+    <h3>Le contenu qui te manque, et c'est le seul</h3>
+    <p>Un format n'existe pas encore : <strong>toi, face caméra, en pédagogie industrielle.</strong> C'est le seul qui parle directement à un directeur R&amp;D. Six sujets à tourner <strong>en une seule journée</strong>, pas au fil de l'eau.</p>
     <ol>
       <li>Pourquoi mon amande amère n'a rien à voir avec ce que vous trouvez ailleurs</li>
       <li>Ce que dit vraiment votre étiquette quand elle dit « arôme naturel »</li>
@@ -655,20 +758,20 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
       <li>Comment je choisis entre deux lots de la même huile</li>
       <li>Ce que coûte vraiment une huile essentielle dans un produit fini</li>
     </ol>
-    <p class="small">Pourquoi en une journée : votre blog a publié huit articles en sept semaines à l'automne 2025, puis plus rien pendant dix mois. Ce qui n'est pas produit d'un coup ne sera pas produit.</p>
+    <p class="small">Pourquoi en une journée : ton blog a publié huit articles en sept semaines à l'automne 2025, puis plus rien pendant dix mois. Ce qui n'est pas produit d'un coup ne sera pas produit.</p>
 
     <h3>Qui fait quoi</h3>
     <div class="tw">
       <table>
         <thead><tr><th>Qui</th><th>Fait quoi</th><th>Charge</th></tr></thead>
         <tbody>
-          <tr><td>Ted</td><td>Thèmes, angles, requêtes cibles, rédaction, calendrier à J-30</td><td>Continue</td></tr>
+          <tr><td>Ted</td><td>Thèmes, angles, requêtes cibles, rédaction, Google Ads, calendrier à J-30</td><td>Continue</td></tr>
           <tr><td>Vorombola</td><td>Déclinaison en posts, montage vidéo, publication</td><td>Continue</td></tr>
-          <tr><td><strong>Vous</strong></td><td>Deux journées de tournage groupé, validation avant publication</td><td><strong>2 jours + 2 h/mois</strong></td></tr>
+          <tr><td><strong>Toi</strong></td><td>Deux journées de tournage groupé, validation avant publication</td><td><strong>2 jours + 2 h/mois</strong></td></tr>
         </tbody>
       </table>
     </div>
-    <p>Vous avez dit qu'une mécanique compliquée ne serait pas tenue. <strong>Votre charge est le paramètre de conception de ce plan, pas sa conséquence.</strong> Tout ce qui la dépasse a été écarté.</p>
+    <p>Tu as dit qu'une mécanique compliquée ne serait pas tenue. <strong>Ta charge est le paramètre de conception de ce plan, pas sa conséquence.</strong> Tout ce qui la dépasse a été écarté.</p>
 
     <h3>Ce qu'on mesure</h3>
     <div class="tw">
@@ -676,34 +779,40 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
         <thead><tr><th>Indicateur</th><th class="num">Aujourd'hui</th><th class="num">À 3 mois</th><th class="num">À 6 mois</th></tr></thead>
         <tbody>
           <tr><td><strong>Clics LinkedIn vers le site</strong></td><td class="num">~6/mois</td><td class="num">60</td><td class="num">120</td></tr>
-          <tr><td>Taux de clic</td><td class="num">0,066 %</td><td class="num">0,4 %</td><td class="num">0,5 %</td></tr>
+          <tr><td>Taux de clic LinkedIn</td><td class="num">0,066 %</td><td class="num">0,4 %</td><td class="num">0,5 %</td></tr>
           <tr><td><strong>Enregistrements + republications</strong></td><td class="num">19</td><td class="num">60</td><td class="num">120</td></tr>
           <tr><td>Sessions organiques</td><td class="num">non mesurable</td><td class="num">80</td><td class="num">200</td></tr>
-          <tr><td>Requêtes positionnées hors marque</td><td class="num">~0</td><td class="num">12</td><td class="num">30</td></tr>
+          <tr><td><strong>Demandes via Google Ads</strong></td><td class="num">0</td><td class="num">à établir</td><td class="num">à établir</td></tr>
           <tr><td>Leads entrants</td><td class="num">~2/mois</td><td class="num">4</td><td class="num">6</td></tr>
           <tr><td><strong>Part de leads industriels</strong></td><td class="num">inconnue</td><td class="num">25 %</td><td class="num">40 %</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Trois à regarder chaque mois : les clics, les enregistrements, la part d'industriels. Un à ignorer : votre nombre d'abonnés. Il ne dit rien d'utile, votre audience est déjà suffisante.</p>
+    <p class="small">Les cibles Google Ads restent volontairement vides. Aucun chiffrage ne sera avancé avant les six premières semaines de données réelles, comme convenu au départ.</p>
   </div>
 </section>
 
 <!-- ============ MESSAGES ============ -->
 <section id="messages">
   <div class="wrap">
-    <div class="eyebrow">08 — Les messages</div>
+    <div class="eyebrow">09 — Les messages</div>
     <h2>Ce qu'on dit, page par page</h2>
     <p class="lead">Le principe est le même partout : <strong>partir du problème du lecteur, jamais du produit.</strong> Une page qui commence par « nos huiles essentielles sont issues de » fait comparer un prix. Une page qui commence par « votre note ne tient pas après pasteurisation » fait comparer un enjeu.</p>
 
     <h3>Accueil</h3>
-    <p>L'accroche en deux temps que vous avez demandée : sensoriel d'abord, méthode ensuite.</p>
+    <p>L'accroche en deux temps que tu as demandée : sensoriel d'abord, méthode ensuite.</p>
     <div class="callout">
-      <p style="font-family:var(--serif);font-size:1.5rem;font-weight:600;margin-bottom:.4rem">Le goût est un langage. Je le traduis.</p>
+      <p style="font-size:1.5rem;font-weight:700;letter-spacing:-.03em;margin-bottom:.4rem">Le goût est un langage. Je le traduis.</p>
       <p style="margin-bottom:0">Les huiles essentielles sont ma méthode privilégiée pour sublimer une recette.</p>
     </div>
-    <p>Puis, dans l'ordre : vos preuves en bandeau (TEDx, quatre livres, Collège Culinaire), la vidéo Poire et Cactus en premier plan, le tri par profil, l'argument d'étiquette, le segment hydrosoluble, vos références.</p>
+    <p>Puis, dans l'ordre : tes preuves en bandeau (TEDx, quatre livres, Collège Culinaire), la vidéo Poire et Cactus en premier plan, le tri par profil, l'argument d'étiquette, le segment hydrosoluble, tes références.</p>
     <p><strong>Le visuel qui vaut mille mots</strong> : deux étiquettes côte à côte. « Arôme naturel » d'un côté, « huile essentielle de citron » de l'autre. Sans texte. Un industriel comprend en trois secondes ce qu'il gagne.</p>
+
+    <h3>Animation culinaire en entreprise <span class="small">(nouvelle page)</span></h3>
+    <p>Message : <strong>« Une équipe qui cuisine ensemble se parle autrement. Et elle s'en souvient. »</strong></p>
+    <p>Le lecteur n'est ni un chef ni un industriel. C'est un responsable RH ou un office manager qui doit organiser quelque chose dont ses équipes se souviendront. Il ne cherche pas des huiles essentielles, il cherche à ne pas se tromper.</p>
+    <p>Ce qu'il veut savoir, dans l'ordre : combien de personnes, combien de temps, où, combien ça coûte, et ce qui rend ton atelier différent d'un cours de cuisine. C'est là que ton expertise du goût devient un argument et non un détail.</p>
+    <p class="small">C'est aussi la page d'atterrissage de tes annonces. Elle doit charger vite et proposer une demande de devis en trois champs.</p>
 
     <h3>Industriels agroalimentaires</h3>
     <p>Message : <strong>« Votre étiquette dit arôme naturel. Elle pourrait dire huile essentielle de citron. »</strong></p>
@@ -716,100 +825,106 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
 
     <h3>Chefs &amp; traiteurs</h3>
     <p>Message : <strong>« La note qui manque à votre plat, vous l'avez déjà cherchée. Elle existe. »</strong></p>
-    <p>Le seul profil pour qui le registre est créatif et pas technique. Il ne veut pas être rassuré, il veut être inspiré et ne pas rater son plat. C'est ici que vivent vos quatre mois de recettes déjà tournées.</p>
+    <p>Le seul profil pour qui le registre est créatif et pas technique. Il ne veut pas être rassuré, il veut être inspiré et ne pas rater son plat. C'est ici que vivent tes quatre mois de recettes déjà tournées.</p>
 
     <h3>Consulting</h3>
     <p>Message : <strong>« Vous avez une R&amp;D. La question n'est pas de la remplacer, c'est de savoir quand un regard extérieur fait gagner six mois. »</strong></p>
-    <p>Votre vrai concurrent n'est pas un autre consultant, c'est « on le fait nous-mêmes ». Une page honnête sur quand ne pas faire appel à vous convaincra davantage qu'une page qui vend.</p>
-    <p class="small">Jamais de tarif journalier affiché. Vous réglez un problème en une phrase : une phrase facturée à la journée vaut zéro.</p>
+    <p>Ton vrai concurrent n'est pas un autre consultant, c'est « on le fait nous-mêmes ». Une page honnête sur quand ne pas faire appel à toi convaincra davantage qu'une page qui vend.</p>
+    <p class="small">Jamais de tarif journalier affiché. Tu règles un problème en une phrase : une phrase facturée à la journée vaut zéro.</p>
 
     <h3>L'étiquette <span class="small">(nouvelle page)</span></h3>
     <p>Message : <strong>« Arôme naturel ou huile essentielle de citron. Ce n'est pas le même produit en rayon. »</strong></p>
     <p>Le constat consommateur (21 millions d'utilisateurs Yuka en France, le Nutri-Score en voie d'obligation), la base juridique (règlement CE 1334/2008, article 15.1.a), et surtout l'angle que Primessence ne prend pas : <strong>ne pas expliquer comment déclarer un arôme, mais comment ne plus avoir à écrire ce mot.</strong></p>
-    <p class="small">Sans attente de référencement. Cette page est le lien que vous envoyez avant un rendez-vous et que vos apporteurs transmettent. Sa valeur est commerciale.</p>
+    <p class="small">Sans attente de référencement. Cette page est le lien que tu envoies avant un rendez-vous et que tes apporteurs transmettent. Sa valeur est commerciale.</p>
 
     <h3>Le chef</h3>
-    <p>La page que Google et les IA lisent pour construire votre fiche d'entité. Avec dates et liens : votre parcours, le Collège Culinaire, la toque, le TEDx, les quatre livres avec ISBN, la presse, l'atelier, et vos marques historiques présentées comme les vôtres.</p>
+    <p>La page que Google et les IA lisent pour construire ta fiche d'entité. Avec dates et liens : ton parcours, le Collège Culinaire, la toque, le TEDx, les quatre livres avec ISBN, la presse, l'atelier, et tes marques historiques présentées comme les tiennes.</p>
 
     <h3>Références</h3>
     <p>Le milieu agro est discret, beaucoup d'industriels refuseront d'apparaître. Trois traitements, comme convenu : cas anonymisés typés, bandeau de logos sans citation, citations nominatives quand elles existent.</p>
     <div class="callout">
       <span class="tag">Une piste pour contourner la discrétion</span>
-      <p>Un directeur R&amp;D refusera de témoigner pour un fournisseur. Le même acceptera peut-être d'intervenir sur un <strong>sujet technique</strong>, où il apparaît comme expert. Ce n'est pas un témoignage, c'est une tribune. À vous de dire qui est sollicitable.</p>
+      <p>Un directeur R&amp;D refusera de témoigner pour un fournisseur. Le même acceptera peut-être d'intervenir sur un <strong>sujet technique</strong>, où il apparaît comme expert. Ce n'est pas un témoignage, c'est une tribune. À toi de dire qui est sollicitable.</p>
     </div>
 
-    <h3>Parler de votre projet</h3>
+    <h3>Parler de ton projet</h3>
     <p>Un point de contact par profil, avec des champs adaptés. Et une promesse : <strong>« Décrivez votre blocage. Je réponds en une phrase. »</strong></p>
-    <p class="small">C'est votre proposition de valeur et la meilleure démonstration possible. À ne pas écrire si vous ne pouvez pas la tenir.</p>
+    <p class="small">C'est ta proposition de valeur et la meilleure démonstration possible. À ne pas écrire si tu ne peux pas la tenir.</p>
   </div>
 </section>
 
 <!-- ============ SUITE ============ -->
 <section id="suite">
   <div class="wrap">
-    <div class="eyebrow">09 — La suite</div>
-    <h2>Ce qu'il me faut de vous</h2>
+    <div class="eyebrow">10 — La suite</div>
+    <h2>Ce qu'il me faut de toi</h2>
 
-    <h3>Trois questions bloquantes</h3>
+    <h3>Quatre questions bloquantes</h3>
     <p>Elles prennent dix minutes et conditionnent le reste.</p>
     <div class="steps">
       <div class="step">
-        <h4>Votre avantage hydrosoluble porte sur quoi exactement ?</h4>
+        <h4>Ton avantage hydrosoluble porte sur quoi exactement ?</h4>
         <p>Sur la solubilité dans l'eau, ou sur <strong>la solubilité sans perdre le droit d'écrire « huile essentielle de X » à l'étiquette</strong> ?</p>
-        <p class="small">Haromatics vend déjà des solutions hydrosolubles pour boissons, boulangerie et produits laitiers. Si c'est la première réponse, la revendication d'unicité est attaquable au premier prospect qui vérifie. Si c'est la seconde, c'est le cœur de votre différenciation et il faut l'écrire partout. <strong>Rien ne sera publié sur ce point avant votre réponse.</strong></p>
+        <p class="small">Haromatics vend déjà des solutions hydrosolubles pour boissons, boulangerie et produits laitiers. Si c'est la première réponse, la revendication d'unicité est attaquable au premier prospect qui vérifie. Si c'est la seconde, c'est le cœur de ta différenciation et il faut l'écrire partout. <strong>Rien ne sera publié sur ce point avant ta réponse.</strong></p>
+      </div>
+      <div class="step">
+        <h4>L'animation culinaire en entreprise, tu en fais combien par an ?</h4>
+        <p>C'est le gisement le plus important trouvé dans cette étude, et je ne sais pas quelle place il occupe réellement chez toi. <strong>Si c'est marginal et que tu n'as pas envie d'en faire plus, on l'écarte et le plan change.</strong> Si c'est une vraie activité, elle passe devant.</p>
       </div>
       <div class="step">
         <h4>Qui maîtrise le savoir-faire de solubilisation ?</h4>
-        <p>Vous, un façonnier, un partenaire ? Si c'est un tiers, une partie de votre avantage est louée et non possédée, ce qui change les priorités.</p>
+        <p>Toi, un façonnier, un partenaire ? Si c'est un tiers, une partie de ton avantage est louée et non possédée, ce qui change les priorités.</p>
       </div>
       <div class="step">
-        <h4>Votre atelier est à Amiens ou à La Saline-les-Hauts ?</h4>
-        <p>Vos mentions légales disent Amiens. Nos échanges disent La Réunion. Ça bloque la fiche Google Business, les mentions légales et la cohérence de votre entité.</p>
+        <h4>Ton atelier est à Amiens ou à La Saline-les-Hauts ?</h4>
+        <p>Tes mentions légales disent Amiens. Nos échanges disent La Réunion. Ça bloque la fiche Google Business, les mentions légales et la cohérence de ton entité.</p>
       </div>
     </div>
 
-    <h3>Les chiffres, quand vous aurez un moment</h3>
+    <h3>Les chiffres, quand tu auras un moment</h3>
     <p>Des ordres de grandeur suffisent, rien ne sera publié. Ils permettent de savoir où porter l'effort.</p>
     <ul>
-      <li>Chiffre d'affaires des douze derniers mois, et sa répartition entre ingrédients, consulting et produits locaux</li>
-      <li>Sur vos ~200 clients, combien sont des industriels, des fromagers, des chefs</li>
+      <li>Chiffre d'affaires des douze derniers mois, et sa répartition entre ingrédients, consulting, animation et produits locaux</li>
+      <li>Sur tes ~200 clients, combien sont des industriels, des fromagers, des chefs, des entreprises</li>
       <li>Panier moyen par type de client, et la plus grosse commande jamais passée</li>
-      <li>Part de votre chiffre d'affaires venant des apporteurs d'affaires</li>
-      <li><strong>Facturez-vous l'accompagnement à la mise au point, ou est-il inclus dans la vente du produit ?</strong></li>
+      <li>Part de ton chiffre d'affaires venant des apporteurs d'affaires</li>
+      <li><strong>Factures-tu l'accompagnement à la mise au point, ou est-il inclus dans la vente du produit ?</strong></li>
     </ul>
     <div class="callout">
       <span class="tag">Pourquoi la dernière question compte le plus</span>
-      <p>Vous réglez un problème en une phrase. Cette phrase est ce que vos clients achètent vraiment. Si elle est donnée gratuitement autour d'une vente de flacon, <strong>vous délivrez une prestation à très forte valeur sans la facturer</strong>. C'est probablement le premier levier de votre rentabilité, et il ne demande rien à produire.</p>
+      <p>Tu règles un problème en une phrase. Cette phrase est ce que tes clients achètent vraiment. Si elle est donnée gratuitement autour d'une vente de flacon, <strong>tu délivres une prestation à très forte valeur sans la facturer</strong>. C'est probablement le premier levier de ta rentabilité, et il ne demande rien à produire.</p>
     </div>
 
     <h3>Les preuves à réunir</h3>
     <ul>
-      <li>Le lien de votre TEDx</li>
-      <li>La liste de vos quatre livres avec titres, éditeurs et ISBN</li>
-      <li>Vos mentions presse des trois dernières années, avec dates et liens</li>
-      <li>Les logos que vous pouvez afficher sans citation</li>
-      <li>Les citations existantes, et les quatre ou cinq nouvelles que vous pouvez obtenir</li>
+      <li>Le lien de ton TEDx</li>
+      <li>La liste de tes quatre livres avec titres, éditeurs et ISBN</li>
+      <li>Tes mentions presse des trois dernières années, avec dates et liens</li>
+      <li>Les logos que tu peux afficher sans citation</li>
+      <li>Les citations existantes, et les quatre ou cinq nouvelles que tu peux obtenir</li>
       <li>La date de sortie de la vidéo Poire et Cactus</li>
-      <li>Une question à creuser : <strong>couvrez-vous les notes fumées et grillées ?</strong> La réglementation européenne sur les arômes de fumée force des reformulations avec des échéances en 2026 et 2029. Si vous avez des solutions dessus, c'est un sujet à sortir vite.</li>
+      <li><strong>Des photos de tes ateliers en entreprise</strong>, si tu en as. Une page d'animation culinaire sans image ne se vend pas.</li>
+      <li>Une question à creuser : <strong>couvres-tu les notes fumées et grillées ?</strong> La réglementation européenne sur les arômes de fumée force des reformulations avec des échéances en 2026 et 2029.</li>
     </ul>
 
     <h3>Les limites de cette étude</h3>
     <p>Par honnêteté, ce qui n'a pas pu être fait et qui reste ouvert.</p>
     <ul>
-      <li>60 requêtes testées. Le rapport de mots-clés associés n'a pas pu être exécuté, les crédits de l'outil ont été épuisés en cours d'analyse. Il élargira la longue traîne et peut justifier une page de plus.</li>
-      <li>Quatre pages de résultats analysées sur douze requêtes prioritaires. Les huit autres sont à vérifier avant d'écrire les articles correspondants.</li>
+      <li>84 requêtes testées. Le rapport de mots-clés associés n'a pas pu être exécuté, les crédits de l'outil ayant été épuisés en cours d'analyse. Il élargira la longue traîne et peut justifier une page de plus.</li>
+      <li>Quatre pages de résultats analysées. Les autres sont à vérifier avant d'écrire les articles correspondants.</li>
       <li>Les volumes sont des estimations. L'ordre de grandeur est fiable, la valeur exacte non.</li>
-      <li>Vos profils clients sont construits sur vos déclarations, votre démographie LinkedIn réelle et la structure publique du secteur. Aucun de vos clients n'a été contacté, comme convenu. <strong>Relisez-les et corrigez ce qui ne colle pas à ce que vous voyez depuis dix ans.</strong></li>
+      <li>Les volumes locaux à La Réunion sont déduits de la base France, qui ne permet pas d'isoler le département. <strong>Google Ads donnera la vraie mesure en trois semaines</strong>, et c'est une raison de plus de commencer par là.</li>
+      <li>Tes profils clients sont construits sur tes déclarations, ta démographie LinkedIn réelle et la structure publique du secteur. Aucun de tes clients n'a été contacté, comme convenu. <strong>Relis-les et corrige ce qui ne colle pas.</strong></li>
     </ul>
     <p><strong>L'arborescence n'est pas figée définitivement</strong>, comme convenu au départ. Search Console donnera la vérité une fois le site en ligne : c'est la seule source qui ne s'estime pas, et elle justifiera un ajustement à trois mois.</p>
 
     <hr>
 
-    <h3>Si vous ne deviez retenir qu'une chose</h3>
+    <h3>Si tu ne devais retenir qu'une chose</h3>
     <div class="callout">
-      <p><strong>Publiez cette semaine un post LinkedIn expliquant qu'un industriel peut écrire « huile essentielle de citron » plutôt qu'« arôme naturel », et pourquoi ça change tout en rayon. Avec un lien vers votre site dans le corps du post.</strong></p>
-      <p>Trente minutes, zéro euro. Ce post fait trois choses en même temps : il teste l'axe de toute cette étude avant qu'un euro ne soit engagé, il répare la passerelle qui vous coûte le plus, et il occupe le terrain avant quelqu'un d'autre.</p>
-      <p style="margin-bottom:0">C'est la seule action qui ne dépend de rien. Ni du site, ni du budget, ni de Vorombola, ni de mes questions. Vous pouvez la faire aujourd'hui.</p>
+      <p><strong>Publie cette semaine un post LinkedIn expliquant qu'un industriel peut écrire « huile essentielle de citron » plutôt qu'« arôme naturel », et pourquoi ça change tout en rayon. Avec un lien vers ton site dans le corps du post.</strong></p>
+      <p>Trente minutes, zéro euro. Ce post fait trois choses en même temps : il teste l'axe de toute cette étude avant qu'un euro ne soit engagé, il répare la passerelle qui te coûte le plus, et il occupe le terrain avant quelqu'un d'autre.</p>
+      <p style="margin-bottom:0">C'est la seule action qui ne dépend de rien. Ni du site, ni du budget, ni de Vorombola, ni de mes questions. Tu peux la faire aujourd'hui.</p>
     </div>
   </div>
 </section>
@@ -822,7 +937,7 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
     </div>
     <div>
       Document privé et non indexé.<br>
-      Sources : Semrush (base France), ANIA, INSEE, EUR-Lex, IFOP.
+      Sources : Semrush (base France), ANIA, INSEE, ADIR, EUR-Lex, IFOP.
     </div>
   </div>
 </footer>
