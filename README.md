@@ -30,4 +30,4 @@ Ce dépôt est **indépendant du site d'Aymeric Pataud** (`zNk-v/aymeric-pataud`
 
 ---
 
-Réalisé par Ted Vidalozzi · Sitaly
+Réalisé par Teddy VIDAL · Sitaly.fr
