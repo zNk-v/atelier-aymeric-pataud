@@ -75,6 +75,19 @@ li{margin-bottom:.4rem}
 .callout.warn .tag{color:var(--ambre)}
 .callout.note .tag{color:var(--bleu)}
 
+/* ---------- RÉVISION ---------- */
+.rev{display:inline-flex;align-items:center;gap:.34rem;font-size:.67rem;font-weight:700;letter-spacing:.045em;text-transform:uppercase;color:var(--ambre);background:var(--ambre-pale);border:1px solid #E0CB9B;padding:.15rem .5rem .17rem;border-radius:99px;vertical-align:middle;white-space:nowrap;line-height:1.4}
+.rev::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--ambre);flex:none}
+.rev.ko{color:var(--rouge);background:var(--rouge-pale);border-color:#E3C5BF}
+.rev.ko::before{background:var(--rouge)}
+.rev.ok{color:var(--vert);background:var(--sauge-pale);border-color:#B6CCC2}
+.rev.ok::before{background:var(--vert)}
+h3 .rev,h4 .rev{margin-left:.55rem;position:relative;top:-1px}
+.callout.rev-box{border-left-color:var(--ambre);background:var(--ambre-pale)}
+.callout.rev-box .tag{color:var(--ambre)}
+.struck{text-decoration:line-through;text-decoration-color:var(--rouge);text-decoration-thickness:1px;color:var(--encre-60)}
+.pill.pill-rev{background:var(--ambre-pale);border-color:#E0CB9B;font-weight:600}
+
 /* ---------- BAR CHART ---------- */
 .chart{background:var(--blanc);border:1px solid var(--ligne);border-radius:14px;padding:1.5rem;margin:1.8rem 0}
 .chart-t{font-size:.95rem;font-weight:600;letter-spacing:-.015em;margin-bottom:.25rem}
@@ -182,6 +195,7 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
       <span class="pill">4 SERP analysées</span>
       <span class="pill">Semrush · base France</span>
       <span class="pill">Document privé, non indexé</span>
+      <span class="pill pill-rev">Révision 2 · 31 août 2026</span>
     </div>
   </div>
 </header>
@@ -189,6 +203,12 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
 <!-- ============ EN BREF ============ -->
 <section id="bref">
   <div class="wrap">
+    <div class="callout rev-box" id="revision">
+      <span class="tag">Révision 2 · 31 août 2026</span>
+      <p>Tu as répondu le 28 août aux questions bloquantes de la section 10. <strong>Trois de tes réponses modifient les conclusions de cette étude, et l'une d'elles en invalide l'argument central.</strong> Le document a été corrigé plutôt que réécrit : chaque passage touché porte un badge, et la version d'origine reste lisible, barrée, en dessous.</p>
+      <p style="margin-bottom:0">Ce qui a changé : <strong>l'argument d'étiquetage</strong> (invalidé — voir <a href="#site">Le site</a> et la conclusion), <strong>le rôle de l'animation en entreprise</strong> (requalifiée en canal d'acquisition — voir <a href="#requetes">Les requêtes</a> et <a href="#plan">Le plan</a>), et <strong>la date d'entrée au Collège Culinaire de France</strong> (obtenue, source encore manquante). Deux questions restent sans réponse et bloquent toujours la suite.</p>
+    </div>
+
     <div class="eyebrow">01 — En bref</div>
     <h2>Trois chiffres qui résument tout</h2>
 
@@ -357,7 +377,7 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
 
     <p>Additionnées, ces requêtes font moins de 200 recherches par mois pour toute la France. <strong>On ne construit pas une acquisition là-dessus.</strong> Ce n'est pas un échec de ton positionnement, c'est la nature de ton marché : une niche B2B ne se cherche pas sur Google. Tes industriels viendront de LinkedIn, de tes apporteurs et de tes rendez-vous.</p>
 
-    <h3>Ensuite le gisement que personne n'avait regardé</h3>
+    <h3>Ensuite le gisement que personne n'avait regardé <span class="rev">Requalifié le 31/08</span></h3>
     <div class="chart">
       <div class="chart-t">L'animation culinaire en entreprise</div>
       <div class="chart-s">Recherches mensuelles en France · avec le coût du clic, qui mesure l'intention commerciale</div>
@@ -374,6 +394,12 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
       <span class="tag">Pourquoi le coût du clic compte plus que le volume</span>
       <p>Un annonceur qui paie <strong>6,89 € un seul clic</strong> sur « atelier culinaire team building » ne le fait pas par plaisir. Il le fait parce que ce clic se transforme en devis, et le devis en contrat. <strong>Le coût du clic est le meilleur indicateur d'intention commerciale qui existe.</strong></p>
       <p style="margin-bottom:0">À comparer : « huile essentielle alimentaire », 170 recherches, coût du clic à <strong>0,28 €</strong>. Vingt-cinq fois moins. Personne ne se bat pour ces clics parce qu'ils rapportent peu.</p>
+    </div>
+
+    <div class="callout rev-box">
+      <span class="tag">Révision · 31 août 2026</span>
+      <p>Les volumes et les coûts au clic ci-dessus restent exacts. <strong>Ce qui change, c'est ce qu'on attend de ce segment.</strong> Tu ne veux pas multiplier les journées : une à deux par mois est déjà ton rythme haut, et tu chiffres le direct autour de 30 000 € à l'année. Ta phrase du 28 août : <em>« ça n'a vraiment d'intérêt que si ça crée du réseau, de la visibilité, et que ça débouche potentiellement sur de la vente Délice &amp; Sens. »</em></p>
+      <p style="margin-bottom:0">L'animation en entreprise n'est donc plus traitée dans ce plan comme un gisement de revenu, mais comme <strong>le canal d'acquisition le moins cher de l'étude</strong> : le seul endroit où des entreprises expriment un besoin, à un coût au clic nul localement. Ce qu'on y cherche, ce sont des entrées chez des industriels, des hôtels et des prescripteurs. Pas des dates à remplir.</p>
     </div>
 
     <h3>Et ton univers produit</h3>
@@ -702,7 +728,7 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
       <div class="tl-i"><div class="tl-d">Septembre 2026</div><h4>La liste des hôtels, et les trois premiers contacts</h4><p>C'est le chantier prioritaire, parce que c'est le seul qui ne dépend ni du site ni d'un budget. Une trentaine de noms, le chef exécutif de chacun, et trois dégustations calées avant la fin du mois. <strong>Commence par Akoya : c'est le plus proche de ton atelier.</strong></p></div>
       <div class="tl-i"><div class="tl-d">Septembre 2026</div><h4>Fiche Google Business en priorité haute</h4><p>Pas pour les huiles essentielles, pour le team building et les ateliers. C'est ce qui te fait apparaître sur les recherches locales. Trente minutes, une fois l'adresse tranchée.</p></div>
       <div class="tl-i"><div class="tl-d">Octobre 2026</div><h4>Deux pages : animation en entreprise, et hôtels</h4><p>Aucune n'existe sur ton site. La première est la page d'atterrissage de tes annonces et sert la métropole après 2027. La seconde ne fera aucun trafic mais te crédibilise quand un directeur F&amp;B vérifie qui tu es.</p></div>
-      <div class="tl-i"><div class="tl-d">Novembre 2026</div><h4>Google Ads, campagne locale</h4><p>Budget de test à 100 €/mois, ciblage La Réunion, sur team building, atelier cuisine entreprise, animation culinaire. Mesure au bout de six semaines.</p></div>
+      <div class="tl-i"><div class="tl-d">Novembre 2026</div><h4>Google Ads, campagne locale</h4><p>Budget de test à 100 €/mois, ciblage La Réunion, sur team building, atelier cuisine entreprise, animation culinaire. Mesure au bout de six semaines.</p><p class="small"><span class="rev">Requalifié le 31/08</span> La campagne ne se juge pas au nombre de demandes mais à leur origine. Une demande venant d'un industriel, d'un hôtel ou d'un groupe vaut plus que cinq demandes de sortie d'équipe.</p></div>
       <div class="tl-i"><div class="tl-d">Décembre 2026 – février 2027</div><h4>L'ADIR, la liste des 153, et l'accord séminaires</h4><p>Une intervention, un atelier, une démonstration chez l'ADIR. Et en parallèle : négocier avec un ou deux hôtels pour figurer dans leur offre séminaire. <strong>C'est le levier qui continue de produire une fois que tu es parti.</strong></p></div>
       <div class="tl-i"><div class="tl-d">Mars – mai 2027</div><h4>Sécuriser ce qui se perd</h4><p>Contrats d'approvisionnement sur le combava et les matières locales. Missions de consulting réunionnais formalisées pour continuer à distance. <strong>Une fois parti sans avoir rien écrit, ça s'éteint tout seul.</strong></p></div>
       <div class="tl-i"><div class="tl-d">Juin – juillet 2027</div><h4>Bascule du compte Ads vers la métropole</h4><p>Mêmes mots-clés, nouveau ciblage géographique, budget recalibré sur des coûts au clic de 4 à 7 €.</p></div>
@@ -722,7 +748,7 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
   <div class="wrap">
     <div class="eyebrow">07 — Le site</div>
     <h2>L'arborescence qui découle de tout ça</h2>
-    <p class="lead">La structure que nous avons construite tient. Elle demande cinq corrections, dont trois ne coûtent rien.</p>
+    <p class="lead">La structure que nous avons construite tient. Elle demande six corrections, dont trois ne coûtent rien.</p>
 
     <div class="tree">
 <pre>Accueil
@@ -761,11 +787,12 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
       <p style="margin-bottom:0">Les deux premières comptent bien au-delà de leur trafic, qui sera nul. <strong>Les créations fromagères portent ton plus fort potentiel.</strong> Et la nutrition sportive est la démonstration la plus nette de ton positionnement : un produit que tu formules <em>sans</em> huiles essentielles. C'est la meilleure réponse à qui voudrait t'enfermer dans « le type des huiles essentielles ».</p>
     </div>
 
-    <h3>Les cinq corrections</h3>
+    <h3>Les six corrections <span class="rev">Une ajoutée le 31/08</span></h3>
     <div class="steps">
       <div class="step">
-        <h4>Créer la page « Animation culinaire en entreprise »</h4>
+        <h4>Créer la page « Animation culinaire en entreprise » <span class="rev">Requalifié le 31/08</span></h4>
         <p>1 790 recherches mensuelles, des coûts au clic de 4 à 7 €, une activité que tu exerces déjà, et aucune page pour la porter. <strong>C'est la correction la plus rentable de la liste</strong>, et c'est aussi la page d'atterrissage de tes annonces à La Réunion.</p>
+        <p style="margin-bottom:0"><strong>Ce que la page vend a changé.</strong> Puisque tu ne cherches pas à remplir des dates, elle ne vend pas une prestation : elle ouvre une relation. L'objectif n'est pas qu'un maximum d'entreprises demandent un devis, c'est que les bonnes te contactent.</p>
       </div>
       <div class="step">
         <h4>Changer « culinaires » en « alimentaires » dans les titres</h4>
@@ -776,8 +803,16 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
         <p>C'est ta page la plus importante sur l'univers produit, et probablement la plus légère aujourd'hui. Elle doit devenir le contenu de référence francophone sur le sujet, parce que personne ne l'occupe. Elle doit répondre en clair à la question centrale : quelle différence avec un arôme hydrosoluble.</p>
       </div>
       <div class="step">
-        <h4>Reformuler « le segment que je suis seul à couvrir »</h4>
-        <p><strong>Attaquable en l'état.</strong> Haromatics vend déjà des solutions hydrosolubles pour boissons, boulangerie et produits laitiers. Le premier prospect qui vérifie fragilise tout le reste de ton discours. Ce qui est probablement vrai et défendable : tu es seul à proposer une hydrosolubilité <em>qui conserve la mention « huile essentielle » à l'étiquette</em>. C'est plus précis et beaucoup plus fort.</p>
+        <h4>Reformuler « le segment que je suis seul à couvrir » <span class="rev ko">Corrigé le 31/08</span></h4>
+        <p><strong>Attaquable en l'état.</strong> Haromatics vend déjà des solutions hydrosolubles pour boissons, boulangerie et produits laitiers. Le premier prospect qui vérifie fragilise tout le reste de ton discours.</p>
+        <p class="struck">Ce qui est probablement vrai et défendable : tu es seul à proposer une hydrosolubilité qui conserve la mention « huile essentielle » à l'étiquette. C'est plus précis et beaucoup plus fort.</p>
+        <p><strong>Cette hypothèse était fausse.</strong> La déclaration réglementaire est « arôme naturel de [la plante] », jamais « huile essentielle ». Le mot ne peut donc pas porter la différenciation, et tout le site l'affirmait.</p>
+        <p style="margin-bottom:0">Ce qui la porte réellement : <strong>un arôme naturel composé à 100 % d'huile essentielle et d'un diluant végétal, sans aucun autre additif.</strong> Même mention légale que les concurrents, composition que personne d'autre ne peut revendiquer. C'est un argument de naturalité et de longueur d'étiquette, pas de vocabulaire — et il est plus solide que celui qu'il remplace, parce qu'il ne s'effondre pas quand un directeur R&amp;D vérifie.</p>
+      </div>
+      <div class="step">
+        <h4>Réécrire les trois blocs qui affirment le contraire <span class="rev ko">Ajouté le 31/08</span></h4>
+        <p>La correction ci-dessus n'est pas une phrase à changer, c'est l'argument principal de trois pages en ligne : le bloc central de l'accueil (« Sur l'étiquette, "huile essentielle de citron". Pas "arôme". »), la page hydrosolubles, et la page créations fromagères.</p>
+        <p style="margin-bottom:0"><strong>Rien n'est modifié tant que la nouvelle formulation n'est pas validée par toi</strong> : sur ce point, c'est toi qui portes le risque réglementaire.</p>
       </div>
       <div class="step">
         <h4>Charger la page « Le chef » et créer une page presse</h4>
@@ -836,7 +871,7 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
         <tbody>
           <tr><td>Oct.</td><td><strong>Pourquoi une huile essentielle ne se mélange pas dans l'eau</strong></td><td class="num">120</td><td>Fromagers</td></tr>
           <tr><td>Oct.</td><td>Comment reconnaître une huile essentielle qu'on peut vraiment ingérer</td><td class="num">370</td><td>Chefs</td></tr>
-          <tr><td>Nov.</td><td>Aromatiser un fromage sans écrire « arôme » sur l'étiquette</td><td class="num">—</td><td>Fromagers</td></tr>
+          <tr><td>Nov.</td><td>Aromatiser un fromage sans additif : ce que change une huile essentielle pure <span class="rev ko">Retitré le 31/08</span></td><td class="num">—</td><td>Fromagers</td></tr>
           <tr><td>Nov.</td><td>Cuisiner aux huiles essentielles : les dosages qui marchent</td><td class="num">180</td><td>Chefs</td></tr>
           <tr><td>Déc.</td><td>Arôme naturel : ce que le mot dit, et ce qu'il ne dit pas</td><td class="num">140</td><td>R&amp;D</td></tr>
           <tr><td>Déc.</td><td>Dix associations qui fonctionnent</td><td class="num">110</td><td>Chefs</td></tr>
@@ -848,6 +883,12 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
       </table>
     </div>
     <p class="small">Le dernier est le seul écrit pour le volume, et c'est assumé : il apportera du trafic peu qualifié. Le premier et le septième sont les plus importants du plan.</p>
+
+    <div class="callout rev-box">
+      <span class="tag">Révision · 31 août 2026</span>
+      <p>Deux articles bougent. Celui de <strong>novembre</strong> a été retitré : son angle d'origine promettait d'écrire autre chose qu'« arôme » sur une étiquette, ce que la réglementation ne permet pas. Le sujet reste le bon, l'angle devient la composition.</p>
+      <p style="margin-bottom:0">Celui de <strong>janvier</strong> — <em>Ce qu'un atelier culinaire change vraiment dans une équipe</em>, 1 790 recherches — garde son volume et sa place, mais change de destination. Il attire des RH ; il ne doit pas déboucher sur un devis d'atelier mais sur une mise en relation. C'est le point d'entrée du canal, pas une page de vente.</p>
+    </div>
 
     <h3>Le contenu qui te manque, et c'est le seul</h3>
     <p>Un format n'existe pas encore : <strong>toi, face caméra, en pédagogie industrielle.</strong> C'est le seul qui parle directement à un directeur R&amp;D. Six sujets à tourner <strong>en une seule journée</strong>, pas au fil de l'eau.</p>
@@ -883,7 +924,7 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
           <tr><td>Taux de clic LinkedIn</td><td class="num">0,066 %</td><td class="num">0,4 %</td><td class="num">0,5 %</td></tr>
           <tr><td><strong>Enregistrements + republications</strong></td><td class="num">19</td><td class="num">60</td><td class="num">120</td></tr>
           <tr><td>Sessions organiques</td><td class="num">non mesurable</td><td class="num">80</td><td class="num">200</td></tr>
-          <tr><td><strong>Demandes via Google Ads</strong></td><td class="num">0</td><td class="num">à établir</td><td class="num">à établir</td></tr>
+          <tr><td><strong>Demandes via Google Ads</strong> <span class="rev">31/08</span><br><span class="small">Suivi par origine, pas en volume : part venant d'industriels, d'hôtels ou de prescripteurs</span></td><td class="num">0</td><td class="num">à établir</td><td class="num">à établir</td></tr>
           <tr><td>Leads entrants</td><td class="num">~2/mois</td><td class="num">4</td><td class="num">6</td></tr>
           <tr><td><strong>Part de leads industriels</strong></td><td class="num">inconnue</td><td class="num">25 %</td><td class="num">40 %</td></tr>
         </tbody>
@@ -920,6 +961,10 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
     <p>Le lecteur n'est ni un chef ni un industriel. C'est un responsable RH ou un office manager qui doit organiser quelque chose dont ses équipes se souviendront. Il ne cherche pas des huiles essentielles, il cherche à ne pas se tromper.</p>
     <p>Ce qu'il veut savoir, dans l'ordre : combien de personnes, combien de temps, où, combien ça coûte, et ce qui rend ton atelier différent d'un cours de cuisine. C'est là que ton expertise du goût devient un argument et non un détail.</p>
     <p class="small">C'est aussi la page d'atterrissage de tes annonces. Elle doit charger vite et proposer une demande de devis en trois champs.</p>
+    <div class="callout rev-box">
+      <span class="tag">Révision · 31 août 2026</span>
+      <p style="margin-bottom:0">Cette page ne cherche pas à remplir ton calendrier, tu n'en veux pas plus de deux par mois. Elle doit donc <strong>qualifier autant qu'elle convainc</strong> : dire le type d'entreprises avec lesquelles tu travailles, montrer que l'atelier est animé par quelqu'un qui formule pour l'industrie, et rendre visible ce qu'il y a derrière la journée. Un lecteur qui repart en se disant « ce type peut aussi nous aider sur nos produits » vaut plus qu'un devis signé.</p>
+    </div>
 
     <h3>Hôtels &amp; tables gastronomiques <span class="small">(nouvelle page)</span></h3>
     <p>Message : <strong>« Votre piscine ressemble à celle d'à côté. Votre carte, non. »</strong></p>
@@ -982,31 +1027,34 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
     <div class="eyebrow">10 — La suite</div>
     <h2>Ce qu'il me faut de toi</h2>
 
-    <h3>Quatre questions bloquantes</h3>
-    <p>Elles prennent dix minutes et conditionnent le reste.</p>
+    <h3>Quatre questions bloquantes <span class="rev ok">3 réponses reçues le 28/08</span></h3>
+    <p>Elles prennent dix minutes et conditionnent le reste. <strong>Deux restent ouvertes, et ce sont elles qui bloquent aujourd'hui.</strong></p>
     <div class="steps">
       <div class="step">
-        <h4>Ton avantage hydrosoluble porte sur quoi exactement ?</h4>
+        <h4>Ton avantage hydrosoluble porte sur quoi exactement ? <span class="rev ok">Répondu le 28/08</span></h4>
         <p>Sur la solubilité dans l'eau, ou sur <strong>la solubilité sans perdre le droit d'écrire « huile essentielle de X » à l'étiquette</strong> ?</p>
         <p class="small">Haromatics vend déjà des solutions hydrosolubles pour boissons, boulangerie et produits laitiers. Si c'est la première réponse, la revendication d'unicité est attaquable au premier prospect qui vérifie. Si c'est la seconde, c'est le cœur de ta différenciation et il faut l'écrire partout. <strong>Rien ne sera publié sur ce point avant ta réponse.</strong></p>
+        <p><strong>Ta réponse : ni l'une ni l'autre.</strong> La mention légale est « arôme naturel de [la plante] » dans tous les cas. La différenciation ne tient pas au mot mais à la composition — 100 % d'huile essentielle et un diluant végétal, sans autre additif. C'est la correction la plus lourde de cette révision : elle touche trois pages du site et la conclusion de l'étude.</p>
       </div>
       <div class="step">
-        <h4>L'animation culinaire en entreprise, tu en fais combien par an ?</h4>
+        <h4>L'animation culinaire en entreprise, tu en fais combien par an ? <span class="rev ok">Répondu le 28/08</span></h4>
         <p>C'est le gisement le plus important trouvé dans cette étude, et je ne sais pas quelle place il occupe réellement chez toi. <strong>Si c'est marginal et que tu n'as pas envie d'en faire plus, on l'écarte et le plan change.</strong> Si c'est une vraie activité, elle passe devant.</p>
+        <p><strong>Ta réponse : une à deux journées par mois, 1 600 à 2 000 € la journée, environ 30 000 € à l'année en direct — et surtout, aucune envie d'en faire davantage pour le revenu.</strong> Le segment ne passe donc ni devant ni à la trappe : il change de nature. Il reste en tête du plan, mais comme canal d'acquisition, pas comme source de chiffre d'affaires.</p>
       </div>
       <div class="step">
-        <h4>Quels hôtels connais-tu déjà, et par qui ?</h4>
+        <h4>Quels hôtels connais-tu déjà, et par qui ? <span class="rev ko">Toujours sans réponse</span></h4>
         <p>La liste des établissements est la première action du plan Réunion, et c'est la seule qui ne dépend ni du site ni d'un budget. <strong>Dis-moi lesquels tu as déjà approchés, lesquels t'ont déjà dit non, et qui tu connais dans la place.</strong></p>
         <p class="small">Une porte déjà entrouverte vaut mieux que trente noms trouvés sur internet. Et à l'inverse, un établissement qui t'a déjà refusé ne doit pas être réapproché de la même façon.</p>
       </div>
       <div class="step">
-        <h4>Qui maîtrise le savoir-faire de solubilisation ?</h4>
+        <h4>Qui maîtrise le savoir-faire de solubilisation ? <span class="rev ko">Toujours sans réponse</span></h4>
         <p>Toi, un façonnier, un partenaire ? Si c'est un tiers, une partie de ton avantage est louée et non possédée, ce qui change les priorités.</p>
       </div>
       <div class="step">
-        <h4>La date de l'entrée au Collège Culinaire de France</h4>
+        <h4>La date de l'entrée au Collège Culinaire de France <span class="rev">Partiellement répondu</span></h4>
         <p>Tes huiles essentielles culinaires viennent d'y entrer, en première mondiale. <strong>C'est ta preuve la plus forte et la plus fraîche, et je n'ai ni la date ni la source pour l'écrire.</strong></p>
         <p class="small">Sans elles, je ne peux pas la publier. Avec elles, elle passe en tête de ta page d'accueil et devient un sujet LinkedIn à elle seule.</p>
+        <p><strong>Ta réponse : mai 2026.</strong> Il manque encore une source citable — un lien, un communiqué, un mail daté. Avec elle, le logo passe en grand sur la page d'accueil comme tu le demandes.</p>
       </div>
     </div>
 
@@ -1049,11 +1097,17 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
 
     <hr>
 
-    <h3>Si tu ne devais retenir qu'une chose</h3>
+    <h3>Si tu ne devais retenir qu'une chose <span class="rev ko">Réécrit le 31/08</span></h3>
+
+    <div class="callout rev-box">
+      <span class="tag">Ce qui était écrit le 19 août</span>
+      <p class="struck" style="margin-bottom:0">Publie cette semaine un post LinkedIn expliquant qu'un industriel peut écrire « huile essentielle de citron » plutôt qu'« arôme naturel », et pourquoi ça change tout en rayon.</p>
+    </div>
+
     <div class="callout">
-      <p><strong>Publie cette semaine un post LinkedIn expliquant qu'un industriel peut écrire « huile essentielle de citron » plutôt qu'« arôme naturel », et pourquoi ça change tout en rayon. Avec un lien vers ton site dans le corps du post.</strong></p>
-      <p>Trente minutes, zéro euro. Ce post fait trois choses en même temps : il teste l'axe de toute cette étude avant qu'un euro ne soit engagé, il répare la passerelle qui te coûte le plus, et il occupe le terrain avant quelqu'un d'autre.</p>
-      <p style="margin-bottom:0">C'est la seule action qui ne dépend de rien. Ni du site, ni du budget, ni de Vorombola, ni de mes questions. Tu peux la faire aujourd'hui.</p>
+      <p><strong>Publie cette semaine un post LinkedIn qui montre deux étiquettes portant la même mention « arôme naturel de citron », et ce qu'il y a derrière chacune : d'un côté un support de synthèse et des additifs, de l'autre 100 % d'huile essentielle et un diluant végétal. Avec un lien vers ton site dans le corps du post.</strong></p>
+      <p>Trente minutes, zéro euro. Le post fait le même travail que dans la version précédente — il teste l'axe de toute cette étude avant qu'un euro ne soit engagé, il répare la passerelle qui te coûte le plus, et il occupe le terrain avant quelqu'un d'autre — mais sur un terrain que tu peux tenir. L'ancienne version t'exposait au premier industriel qui connaît la réglementation.</p>
+      <p style="margin-bottom:0">C'est toujours la seule action qui ne dépend de rien. Ni du site, ni du budget, ni de Vorombola, ni de mes questions. Tu peux la faire aujourd'hui.</p>
     </div>
   </div>
 </section>
@@ -1062,7 +1116,7 @@ hr{border:none;border-top:1px solid var(--ligne);margin:2.5rem 0}
   <div class="wrap">
     <div>
       <strong>Atelier de cadrage stratégique — Aymeric Pataud</strong><br>
-      Réalisé par Teddy VIDAL · Sitaly.fr · Août 2026
+      Réalisé par Teddy VIDAL · Sitaly.fr · Août 2026 · Révision 2 du 31 août 2026
     </div>
     <div>
       Document privé et non indexé.<br>
